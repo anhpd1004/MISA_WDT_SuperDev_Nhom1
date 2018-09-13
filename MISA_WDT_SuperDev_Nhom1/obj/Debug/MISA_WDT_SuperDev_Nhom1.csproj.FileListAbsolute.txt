@@ -1,0 +1,14 @@
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\MISA_WDT_SuperDev_Nhom1.dll.config
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\MISA_WDT_SuperDev_Nhom1.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\MISA_WDT_SuperDev_Nhom1.pdb
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\Newtonsoft.Json.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Net.Http.Formatting.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Web.Http.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Web.Http.WebHost.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\Newtonsoft.Json.xml
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Net.Http.Formatting.xml
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Web.Http.xml
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\bin\System.Web.Http.WebHost.xml
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\obj\Debug\MISA_WDT_SuperDev_Nhom1.csprojResolveAssemblyReference.cache
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\obj\Debug\MISA_WDT_SuperDev_Nhom1.dll
+E:\SOURCE_CODE\MISA\BAI_TAP_CUOI_KHOA\MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1\obj\Debug\MISA_WDT_SuperDev_Nhom1.pdb

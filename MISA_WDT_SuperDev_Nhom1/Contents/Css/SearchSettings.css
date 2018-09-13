@@ -1,0 +1,20 @@
+﻿#header-search-settings {
+    display: none;
+    width: 100%;
+    background-color: #fff !important;
+    color: #000;
+    font-size: 13px !important;
+    box-shadow: 2px 2px 4px #888;
+    margin-top: 5px;
+    z-index: 1000;
+}
+#header-search-settings .search-settings-title {
+    padding: 20px 0;
+    margin-left: 20px;
+}
+#header-search-settings .search-settings-item {
+    margin-left: 10px;
+}
+#header-search-settings .search-settings-group {
+    padding-bottom: 15px;
+}

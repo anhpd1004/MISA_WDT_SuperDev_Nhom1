@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AMIS.VN</title>
+    <!-- /// -->
+    <!-- Created by: Duy Anh -->
+    <!-- Created at: 10/09/2018 -->
+    <!-- Description: Khai báo các thẻ meta -->
+    <!-- /// -->
+    <meta charset="UTF-8">
+    <meta name="application-name" content="AMIS.VN" />
+    <meta name="description" content="The last project of web developer training. Team 01">
+    <meta name="keywords" content="amis.vn clone">
+    <meta name="author" content="MISA_WDT_SuperDev_Nhom1, Pham Duy Anh, Do Huy Hoang, Le Tien Thanh, Hoang Thu Uyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add favicon for website -->    
+    <link href="./Contents/Images/header/amis_vn.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- /// -->
+    <!-- Created by: Duy Anh -->
+    <!-- Created at: 10/09/2018 -->
+    <!-- Description: Thêm các file .css vào trang web -->
+    <!-- /// -->
+    <link href="Contents/Css/style.css" rel="stylesheet" />
+    <link href="Contents/Css/header.css" rel="stylesheet" />
+    <link href="Contents/Css/sidebar.css" rel="stylesheet" />
+    <link href="Contents/Css/submenu.css" rel="stylesheet" />
+    <link href="Contents/Css/SearchSettings.css" rel="stylesheet" />
+
+</head>
+
+<!-- /// -->
+<!-- Created by: Duy Anh -->
+<!-- Created at: 10/09/2018 -->
+<!-- Description: Tạo khung giao diện -->
+<!-- /// -->
+<body>
+    <!-- /// -->
+    <!-- Created by: Duy Anh -->
+    <!-- Created at: 11/09/2018 -->
+    <!-- Description: HEADER -->
+    <!-- /// -->
+    <div id="header">
+        <!-- header-logo-amis -->
+        <div class="header-logo">
+            <div class="header-logo-main-menu" title="Ẩn/hiện menu"></div>
+            <a class="logo-amis-vn" title="Amis.vn" href="http://www.amis.vn/"></a>
+        </div>
+
+        <!-- header application menu -->
+        <div class="header-application"></div>
+
+        <!-- header search textbox -->
+        <div class="header-search-box">
+            <!-- search icon -->
+            <div class="search-icon search-item"></div>
+
+            <!-- search input -->
+            <input type="text" class="search-input" placeholder="Tìm kiếm nhanh..." />
+
+            <!-- /// -->
+            <!-- Created by: Duy Anh -->
+            <!-- Created at: 12/09/2018 -->
+            <!-- Description: header search settings -->
+            <!-- /// -->
+            <div class="search-settings search-item"></div>
+            <div class="clearfix"></div>
+            <!-- /// -->
+            <!-- Created by: Duy Anh -->
+            <!-- Created at: 12/09/2018 -->
+            <!-- Description: header search settings hide/show-->
+            <!-- /// -->
+            <div id="header-search-settings">
+                <div class="search-settings-title">Tìm kiếm theo: </div>
+                <div class="search-settings-group" style="margin-bottom: 15px;">
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Mã nhân viên
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Họ và tên
+                            <input type="checkbox" checked />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            ĐT di động
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Email cơ quan
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="search-settings-group">
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Số CMND/Thẻ căn cước
+                            <input type="checkbox" checked />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Số hộ chiếu
+                            <input type="checkbox" checked />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Vị trí công việc
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Chức danh
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Đơn vị công tác
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            MST cá nhân
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Số sổ BHXH
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="search-settings-item">
+                        <label class="container">
+                            Số thẻ BHYT
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header right  -->
+        <div class="header-right">
+            <!-- header version working -->
+            <div class="header-working-version item">
+                <a style="text-decoration: none;">Làm việc với phiên bản cũ</a>
+            </div>
+
+            <!-- R22.21 in header -->
+            <div class="R-ab-cd item">R22.21</div>
+
+            <!-- header notification -->
+            <div class="notification item"></div>
+
+            <!-- header account -->
+            <div class="header-account item">
+                <!-- account image -->
+                <div class="account-image item"></div>
+
+                <!-- account username -->
+                <div class="account-username item">Hoàng Thành Anh</div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <!-- BODY -->
+    <div id="body">
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 11/09/2018 -->
+        <!-- Description: SIDEBAR -->
+        <!-- /// -->
+        <div class="sidebar">
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <!-- Bàn làm việc -->
+                    <li class="menu-item">
+                        <a href="#" title="Bàn làm việc">
+                            <div class="cls-icon-menu cls-home"></div>
+                            <div class="cls-menu-right">Bàn làm việc</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Hồ sơ nhân viên -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" dropdownname="report-dropdown-item" title="Hồ sơ nhân viên">
+                            <div class="cls-icon-menu cls-profile"></div>
+                            <div class="cls-menu-right">
+                                Hồ sơ nhân viên
+                            </div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của hồ sơ nhân viên -->
+                    <!-- Hồ sơ -->
+                    <li class="menu-item profile-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Hồ sơ">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Hồ sơ</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Hợp đồng -->
+                    <li class="menu-item profile-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Hợp đồng">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Hợp đồng</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Nhân viên tự cập nhật -->
+                    <li class="menu-item profile-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Nhân viên tự cập nhật">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Nhân viên tự cập nhật</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Lương - thuế - bảo hiểm -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" title="Lương - Thuế - Bảo hiểm">
+                            <div class="cls-icon-menu cls-salary"></div>
+                            <div class="cls-menu-right">Lương - Thuế - Bảo hiểm</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của lương - thuế - bảo hiểm -->
+                    <!-- Quản lý thời gian -->
+                    <li class="menu-item salary-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Quản lý thời gian" class="add-arrow-right-icon dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Quản lý thời gian</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Chấm công -->
+                    <li class="menu-item salary-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Chấm công" class="add-arrow-right-icon dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Chấm công</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Lương -->
+                    <li class="menu-item salary-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Lương" class="add-arrow-right-icon">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Lương</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Thuế -->
+                    <li class="menu-item salary-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Thuế" class="add-arrow-right-icon">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Thuế</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Bảo hiểm -->
+                    <li class="menu-item salary-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Bảo hiểm" class="add-arrow-right-icon dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Bảo hiểm</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Tuyển dụng - tiếp nhận -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" title="Tuyển dụng - Tiếp nhận">
+                            <div class="cls-icon-menu cls-recruitment"></div>
+                            <div class="cls-menu-right">Tuyển dụng - Tiếp nhận</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của tuyển dụng - tiếp nhận -->
+                    <!-- Tuyển dụng -->
+                    <li class="menu-item recruitment-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Tuyển dụng" class="add-arrow-right-icon dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Tuyển dụng</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Tiếp nhận -->
+                    <li class="menu-item recruitment-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Tiếp nhận" class="dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Tiếp nhận</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Khen thưởng - sự cố -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" title="Khen thưởng - Sự cố">
+                            <div class="cls-icon-menu cls-accomplishment"></div>
+                            <div class="cls-menu-right">Khen thưởng - Sự cố</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của khen thưởng - sự cố -->
+                    <!-- Khen thưởng -->
+                    <li class="menu-item accomplishment-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Khen thưởng" class="dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Khen thưởng</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Sự cố -->
+                    <li class="menu-item accomplishment-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Sự cố" class="dropdown-menu-item">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Sự cố</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Đánh giá - Đào tạo _ Phúc lợi -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" dropdownname="help-dropdown-item" title="Đánh giá - Đào tạo - Phúc lợi">
+                            <div class="cls-icon-menu cls-train"></div>
+                            <div class="cls-menu-right">
+                                Đánh giá - Đào tạo - Phúc lợi
+                            </div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của Đánh giá - Đào tạo _ Phúc lợi -->
+                    <!-- Đánh giá -->
+                    <li class="menu-item train-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Đánh giá" class="">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Đánh giá</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Đào tạo -->
+                    <li class="menu-item train-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Đào tạo" class="add-arrow-right-icon">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Đào tạo</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Phúc lợi -->
+                    <li class="menu-item train-dropdown-item dropdown-menu-item">
+                        <a href="#" title="Phúc lợi" class="">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Phúc lợi</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Thủ tục -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" title="Thủ tục">
+                            <div class="cls-icon-menu cls-procedure"></div>
+                            <div class="cls-menu-right">Thủ tục</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của thủ tục -->
+                    <!-- Công tác -->
+                    <li class="menu-item procedure-dropdown-item dropdown-menu-item hide">
+                        <a href="#" title="Công tác" class="">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Công tác</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Đồng phục & bảo hộ -->
+                    <li class="menu-item procedure-dropdown-item dropdown-menu-item hide">
+                        <a href="#" title="Đồng phục & bảo hộ" class="">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Đồng phục & bảo hộ</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Thôi việc -->
+                    <li class="menu-item procedure-dropdown-item dropdown-menu-item hide">
+                        <a href="#" title="Thôi việc" class="">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Thôi việc</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- Báo cáo -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-right-icon" title="Báo cáo">
+                            <div class="cls-icon-menu cls-report"></div>
+                            <div class="cls-menu-right">Báo cáo</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Danh mục -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-right-icon" title="Danh mục">
+                            <div class="cls-icon-menu cls-dictionary"></div>
+                            <div class="cls-menu-right">Danh mục</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Hệ thống -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-right-icon" title="Hệ thống">
+                            <div class="cls-icon-menu cls-task"></div>
+                            <div class="cls-menu-right">Hệ thống</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Danh bạ -->
+                    <li class="menu-item">
+                        <a href="#" title="Danh bạ">
+                            <div class="cls-icon-menu cls-contact"></div>
+                            <div class="cls-menu-right">Danh bạ</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Báo cáo nhanh -->
+                    <li class="menu-item">
+                        <a href="#" title="Báo cáo nhanh">
+                            <div class="cls-icon-menu cls-menu-quick-report"></div>
+                            <div class="cls-menu-right">Báo cáo nhanh</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Thùng rác -->
+                    <li class="menu-item">
+                        <a href="#" title="Thùng rác">
+                            <div class="cls-icon-menu cls-delete"></div>
+                            <div class="cls-menu-right">Thùng rác</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- Tiện ích -->
+                    <li class="menu-item">
+                        <a href="#" class="add-arrow-icon" style="border-bottom: 1px solid #16669b;" title="Tiện ích">
+                            <div class="cls-icon-menu cls-utility"></div>
+                            <div class="cls-menu-right">Tiện ích</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////// -->
+                    <!-- Phần dropdown của thủ tục -->
+                    <!-- Lịch sử email -->
+                    <li class="menu-item utility-dropdown-item dropdown-menu-item hide">
+                        <a href="#" title="Lịch sử email">
+                            <div class="cls-icon-menu cls-icon-none"></div>
+                            <div class="cls-menu-right">Lịch sử email</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <!-- /////////////////////////////////////////// -->
+                    <!-- /////////////////////////////////////////// -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-dictionary -->
+        <!-- /// -->
+        <div id="dictionary-submenu" class="sidebar-submenu hide"></div>
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-task -->
+        <!-- /// -->
+        <div id="task-submenu" class="sidebar-submenu hide"></div>
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-report -->
+        <!-- /// -->
+        <div id="report-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Quản lý người dùng</a>
+            <a class="sub-menu-item" href="#">Vai trò và quyền hạn</a>
+            <a class="sub-menu-item" href="#">Nhật kí truy cập</a>
+            <a class="sub-menu-item" href="#">Thiết lập giá trị ngầm định</a>
+            <a class="sub-menu-item" href="#">Thiết lập trường bắt buộc nhập liệu...</a>
+            <a class="sub-menu-item" href="#">Tùy chọn...</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-time-management -->
+        <!-- /// -->
+        <div id="time-management-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Quản lý nghỉ</a>
+            <a class="sub-menu-item" href="#">Quản lý làm thêm</a>
+            <a class="sub-menu-item" href="#">Quản lý đi muộn, về sớm</a>
+            <a class="sub-menu-item" href="#">Quản lý làm bù</a>
+            <a class="sub-menu-item" href="#">Bảng tổng hợp nghỉ phép</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-time-keeping -->
+        <!-- /// -->
+        <div id="time-keeping-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Chấm công theo thời gian</a>
+            <a class="sub-menu-item" href="#">Chấm công tổng hợp theo thời gian</a>
+        </div>
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-salary -->
+        <!-- /// -->
+        <div id="salary-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Bảng lương</a>
+            <a class="sub-menu-item" href="#">Bảng tổng hợp công nợ</a>
+            <a class="sub-menu-item" href="#">Bảng chi trả tiền lương</a>
+            <a class="sub-menu-item" href="#">Bảng tạm ghi nợ nhân viên</a>
+            <a class="sub-menu-item" href="#">Bảng tổng hợp ghi nợ nhân viên</a>
+            <a class="sub-menu-item" href="#">Bảng thu nhập khác</a>
+            <a class="sub-menu-item" href="#">Bảng khấu trừ khác</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-tax -->
+        <!-- /// -->
+        <div id="tax-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Tạm tính thuế</a>
+            <a class="sub-menu-item" href="#">Quyết toán thuế</a>
+            <a class="sub-menu-item" href="#">Tờ khai quyết toán thuế</a>
+            <a class="sub-menu-item" href="#">Tờ khai đăng kí mã số thuế TNCN</a>
+            <a class="sub-menu-item" href="#">Bảng kê đăng kí người phụ thuộc giảm trừ gia cảnh</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 12/09/2018 -->
+        <!-- Description: pn-sub-menu-of-insurance -->
+        <!-- /// -->
+        <div id="insurance-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Đợt bảo hiểm</a>
+            <a class="sub-menu-item" href="#">Thanh toán bảo hiểm</a>
+            <a class="sub-menu-item" href="#">Hồ sơ bảo hiểm</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 13/09/2018 -->
+        <!-- Description: pn-sub-menu-of-training -->
+        <!-- /// -->
+        <div id="training-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Tổng hợp nhu cầu đào tạo</a>
+            <a class="sub-menu-item" href="#">Kế hoạch đào tạo</a>
+            <a class="sub-menu-item" href="#">Khóa đào tạo</a>
+        </div>
+
+        <!-- /// -->
+        <!-- Created by: Duy Anh -->
+        <!-- Created at: 13/09/2018 -->
+        <!-- Description: pn-sub-menu-of-recruitment -->
+        <!-- /// -->
+        <div id="recruitment-submenu" class="sidebar-submenu hide">
+            <a class="sub-menu-item" href="#">Kế hoạch tuyển dụng</a>
+            <a class="sub-menu-item" href="#">Đợt tuyển dụng</a>
+            <a class="sub-menu-item" href="#">Nguồn dự trữ</a>
+            <a class="sub-menu-item" href="#">Hồ sơ vãng lai</a>
+        </div>
+
+        <!-- DATA CONTENT -->
+        <div class="data-content">
+            <!-- Bảng nhân viên -->
+            <div></div>
+
+            <!-- Thông tin nhân viên -->
+        </div>
+    </div>
+
+</body>
+</html>

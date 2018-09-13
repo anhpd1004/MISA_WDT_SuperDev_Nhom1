@@ -1,0 +1,5 @@
+Bảng phân chia công việc: 
+ - Duy Anh: Header + Sidebar + Database < backend, AddEmployeeWorking, HeaderSettings
+ - Huy Hoàng: main information(all), AddEmployeeGeneral
+ - Tiến Thành: main table, AddEmployeeAddress, HeaderApp
+ - Thu Uyên: thêm dữ liệu(>= 1000), slide chuẩn quốc tế
