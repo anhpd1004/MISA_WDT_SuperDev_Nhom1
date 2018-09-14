@@ -29,7 +29,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
             {
                 _sqlConnection = new SqlConnection(_connectionString);
             }
-            if(this._sqlConnection.State == ConnectionState.Closed) 
+            if (this._sqlConnection.State == ConnectionState.Closed)
             {
                 this._sqlConnection.Open();
             }
@@ -60,52 +60,134 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
             while (_sqlDataReader.Read())
             {
                 employee = new Employee();
+                employee.EmployeeID = Guid.Parse(_sqlDataReader["EmployeeID"].ToString());
+                employee.EmployeeCode = _sqlDataReader["EmployeeCode"].ToString();
                 employee.EmployeeName = _sqlDataReader["EmployeeName"].ToString();
+                employee.Gender = _sqlDataReader["Gender"].ToString();
+                employee.Address = _sqlDataReader["Address"].ToString();
+                employee.Birthday = DateTime.Parse(_sqlDataReader["Birthday"].ToString());
+                employee.NumberPhone = _sqlDataReader["NumberPhone"].ToString();
+                employee.Email = _sqlDataReader["Email"].ToString();
+                employee.JobPosition = _sqlDataReader["JobPosition"].ToString();
+                employee.CompanyName = _sqlDataReader["CompanyName"].ToString();
+                employee.Education = _sqlDataReader["Education"].ToString();
+                employee.University = _sqlDataReader["University"].ToString();
+                employee.Major = _sqlDataReader["Major"].ToString();
+                employee.TrialDate = DateTime.Parse(_sqlDataReader["TrialDate"].ToString());
+                employee.OfficalDate = DateTime.Parse(_sqlDataReader["OfficalDate"].ToString());
+                employee.ContractType = _sqlDataReader["ContractType"].ToString();
+                employee.State = _sqlDataReader["State"].ToString();
+                employees.Add(employee);
             }
-            return new List<Employee>();
+            return employees;
         }
 
         public int Insert(Employee employee)
         {
-            
-            return 0;
-        }
-
-        public int FakeData()
-        {
             // define INSERT query with parameters
             string query = "INSERT INTO dbo.Employee (EmployeeID, EmployeeCode, EmployeeName, Gender, Address, Birthday, NumberPhone, " +
-                                                    "Email, CompanyName, Education, Major, TrialDate, OfficalDate, ContractType, State) " +
+                                                    "Email, JobPosition, CompanyName, Education, University, Major, TrialDate, OfficalDate, ContractType, State) " +
                            "VALUES (@EmployeeID, @EmployeeCode, @EmployeeName, @Gender, @Address, @Birthday, @NumberPhone, " +
-                                   "@Email, @CompanyName, @Education, @Major, @TrialDate, @OfficalDate, @ContractType, @State)";
+                                   "@Email, @JobPosition, @CompanyName, @Education, @University, @Major, @TrialDate, @OfficalDate, @ContractType, @State)";
 
             // create connection and command
             using (SqlCommand cmd = new SqlCommand(query, this._sqlConnection))
             {
+
                 // define parameters and their values
-                cmd.Parameters.Add("@EmployeeID", SqlDbType.VarChar, 50).Value = Guid.NewGuid();
-                cmd.Parameters.Add("@EmployeeCode", SqlDbType.VarChar, 50).Value = "NV00001";
-                cmd.Parameters.Add("@EmployeeName", SqlDbType.VarChar, 50).Value = "Phạm Duy Anh";
-                cmd.Parameters.Add("@Gender", SqlDbType.VarChar, 50).Value = "Nam";
-                cmd.Parameters.Add("@Address", SqlDbType.VarChar, 50).Value = "Tiên Lãng - Hải Phòng";
-                cmd.Parameters.Add("@Birthday", SqlDbType.VarChar, 50).Value = DateTime.Now.ToString("MM/dd/yyyy");
-                cmd.Parameters.Add("@NumberPhone", SqlDbType.VarChar, 50).Value = "01238100497";
-                cmd.Parameters.Add("@Email", SqlDbType.VarChar, 50).Value = "AnhPD.soict.hust@gmail.com";
-                cmd.Parameters.Add("@JobPosition", SqlDbType.VarChar, 50).Value = "Giám đốc phòng tài chính";
-                cmd.Parameters.Add("@CompanyName", SqlDbType.VarChar, 50).Value = "Công ty cổ phần Quỳnh Anh";
-                cmd.Parameters.Add("@Education", SqlDbType.VarChar, 50).Value = "Đại học";
-                cmd.Parameters.Add("@University", SqlDbType.VarChar, 50).Value = "Đại học Bách Khoa Hà Nội";
-                cmd.Parameters.Add("@Major", SqlDbType.VarChar, 50).Value = "Quản trị kinh doanh";
-                cmd.Parameters.Add("@TrialDate", SqlDbType.VarChar, 50).Value = DateTime.Now.ToString("MM/dd/yyyy");
-                cmd.Parameters.Add("@OfficalDate", SqlDbType.VarChar, 50).Value = DateTime.Now.ToString("MM/dd/yyyy");
-                cmd.Parameters.Add("@ContractType", SqlDbType.VarChar, 50).Value = "Chính thức";
-                cmd.Parameters.Add("@State", SqlDbType.VarChar, 50).Value = "Chính thức";
+                cmd.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = employee.EmployeeID;
+                cmd.Parameters.Add("@EmployeeCode", SqlDbType.VarChar).Value = employee.EmployeeCode;
+                cmd.Parameters.Add("@EmployeeName", SqlDbType.NVarChar).Value = employee.EmployeeName;
+                cmd.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = employee.EmployeeCode;
+                cmd.Parameters.Add("@Address", SqlDbType.NVarChar).Value = employee.Address;
+                cmd.Parameters.Add("@Birthday", SqlDbType.DateTime).Value = employee.Birthday;
+                cmd.Parameters.Add("@NumberPhone", SqlDbType.VarChar).Value = employee.NumberPhone;
+                cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = employee.Email;
+                cmd.Parameters.Add("@JobPosition", SqlDbType.NVarChar).Value = employee.JobPosition;
+                cmd.Parameters.Add("@CompanyName", SqlDbType.NVarChar).Value = employee.CompanyName;
+                cmd.Parameters.Add("@Education", SqlDbType.NVarChar).Value = employee.Education;
+                cmd.Parameters.Add("@University", SqlDbType.NVarChar).Value = employee.University;
+                cmd.Parameters.Add("@Major", SqlDbType.NVarChar).Value = employee.Major;
+                cmd.Parameters.Add("@TrialDate", SqlDbType.DateTime).Value = employee.TrialDate;
+                cmd.Parameters.Add("@OfficalDate", SqlDbType.DateTime).Value = employee.OfficalDate;
+                cmd.Parameters.Add("@ContractType", SqlDbType.NVarChar).Value = employee.ContractType;
+                cmd.Parameters.Add("@State", SqlDbType.NVarChar).Value = employee.State;
 
 
                 // open connection, execute INSERT, close connection
                 cmd.ExecuteNonQuery();
             }
+            return 1;
+        }
+
+        public int FakeData()
+        {
+            //FAKE DATA
+            string[] firstNames = new string[] { 
+                "Nguyễn", "Trần", "Lê", "Phạm", "Hoàng", "Huỳnh", "Phan", "Vũ", "Võ", "Đặng", "Bùi", "Đỗ", "Hồ", "Ngô", "Dương", "Lý",
+                "An", "Ân", "Bạch", "Cao", "Doãn", "Đoàn", "Mai", "Vương", "Trịnh", "Trương", "Lưu", "Tạ", "Tôn", "Thân", "Văn", 
+                "Phùng", "Mạc", "Văn", "Hà", "Hình", "Lạc", "Lâm", "Liễu", "Lương"
+            };
+            string[] lastNames = new string[] {
+                "Duy Anh", "Thi Linh", "Thi Huyen", "Thi Quynh", "Yen Nhi", "Anh Thu", "Lan Anh", "Van Anh", "Thu Hien", "Phuong Anh",
+                "Thu Quyen", "Khanh Linh", "Khanh Ly", "Thi Trang", "Van Tung", "Huu Thang", "Ngoc Anh", "Duc Huy", "Hong Nhung",
+                "Tuong Vy", "Van Hieu", "Ngoc Tram", "Bich Cham", "Thuy Trang", "Bao Thy", "Huong Giang", "Van Hung", "Gia Han",
+                "Bich Ngoc", "Minh Chau", "Tu Anh", "Thi Nhan", "Minh Nhan", "Thanh Huyen", "Minh Luong", "Nhu Quynh", "Phuong Uyen",
+                "Hai Duong", "Nguyet Minh", "Duy Anh", "Duy Anh", "Mai Linh", "Thanh Hang", "Duy Anh", "Minh Thu", "Tuan Anh",
+                "Duy Anh", "Duy Anh"
+            };
+            string[] states = new string[] {
+                "Chính thức", "Thử việc", "Thực tập sinh", "Part time", "Cộng tác viên"
+            };
+            Random random = new Random();
+            ///END FAKE DATA
+            for (int i = 0; i < 1000; i++)
+            {
+                // define INSERT query with parameters
+                string query = "INSERT INTO dbo.Employee (EmployeeID, EmployeeCode, EmployeeName, Gender, Address, Birthday, NumberPhone, " +
+                                                        "Email, JobPosition, CompanyName, Education, University, Major, TrialDate, OfficalDate, ContractType, State) " +
+                               "VALUES (@EmployeeID, @EmployeeCode, @EmployeeName, @Gender, @Address, @Birthday, @NumberPhone, " +
+                                       "@Email, @JobPosition, @CompanyName, @Education, @University, @Major, @TrialDate, @OfficalDate, @ContractType, @State)";
+
+                // create connection and command
+                using (SqlCommand cmd = new SqlCommand(query, this._sqlConnection))
+                {
+
+                    // define parameters and their values
+                    cmd.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = Guid.NewGuid();
+                    cmd.Parameters.Add("@EmployeeCode", SqlDbType.VarChar).Value = this.GetEmployeeCode(i + 1);
+                    cmd.Parameters.Add("@EmployeeName", SqlDbType.NVarChar).Value = firstNames[random.Next(firstNames.Length)] + " " +
+                                                                                    lastNames[random.Next(lastNames.Length)];
+                    cmd.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = "Nam";
+                    cmd.Parameters.Add("@Address", SqlDbType.NVarChar).Value = "Tiên Lãng - Hải Phòng";
+                    cmd.Parameters.Add("@Birthday", SqlDbType.DateTime).Value = DateTime.Now.ToString("MM/dd/yyyy");
+                    cmd.Parameters.Add("@NumberPhone", SqlDbType.VarChar).Value = "01238100497";
+                    cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = "AnhPD.soict.hust@gmail.com";
+                    cmd.Parameters.Add("@JobPosition", SqlDbType.NVarChar).Value = "Giám đốc phòng tài chính";
+                    cmd.Parameters.Add("@CompanyName", SqlDbType.NVarChar).Value = "Công ty cổ phần Quỳnh Anh";
+                    cmd.Parameters.Add("@Education", SqlDbType.NVarChar).Value = "Đại học";
+                    cmd.Parameters.Add("@University", SqlDbType.NVarChar).Value = "Đại học Bách Khoa Hà Nội";
+                    cmd.Parameters.Add("@Major", SqlDbType.NVarChar).Value = "Quản trị kinh doanh";
+                    cmd.Parameters.Add("@TrialDate", SqlDbType.DateTime).Value = DateTime.Now.ToString("MM/dd/yyyy");
+                    cmd.Parameters.Add("@OfficalDate", SqlDbType.DateTime).Value = DateTime.Now.ToString("MM/dd/yyyy");
+                    cmd.Parameters.Add("@ContractType", SqlDbType.NVarChar).Value = "Chính thức";
+                    cmd.Parameters.Add("@State", SqlDbType.NVarChar).Value = states[random.Next(states.Length)];
+
+
+                    // open connection, execute INSERT, close connection
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
             return 0;
+        }
+        private string GetEmployeeCode(int k)
+        {
+            if (k < 10) return "NV0000" + k;
+            if (k < 100) return "NV000" + k;
+            if (k < 1000) return "NV00" + k;
+            if (k < 10000) return "NV0" + k;
+            return "NV" + k;
         }
 
         public bool Update()

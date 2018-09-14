@@ -38,7 +38,7 @@
 <!-- Created at: 10/09/2018 -->
 <!-- Description: Tạo khung giao diện -->
 <!-- /// -->
-<body>
+<body style="overflow: hidden;">
     <!-- /// -->
     <!-- Created by: Duy Anh -->
     <!-- Created at: 11/09/2018 -->
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </div>
-
+        <div class="header-flex-empty"></div>
         <!-- header right  -->
         <div class="header-right">
             <!-- header version working -->
@@ -191,6 +191,28 @@
         </div>
     </div>
     <div class="clearfix"></div>
+    <script>
+    var header = document.getElementById("header");
+    var width = window.screen.width;
+    header.style.minWidth = width + "px";
+    header.style.width = width * 0.9 + "px";
+    //debugger;
+    var sbox = document.getElementsByClassName("header-search-box")[0];
+    var fempty = document.getElementsByClassName("header-flex-empty")[0];
+    var hright = document.getElementsByClassName("header-right")[0];
+    var hlogo = document.getElementsByClassName("header-logo")[0];
+    var happ = document.getElementsByClassName("header-application")[0];
+    sbox.style.width = 0.26 * width + "px";
+    fempty.style.width = (0.74 * width - hlogo.offsetWidth - hright.offsetWidth - happ.offsetWidth - 55) + "px";
+    window.addEventListener("resize", function () {
+        //debugger;
+        width = body.clientWidth;
+        sbox.style.width = 0.26 * width + "px";
+        fempty.style.width = (0.74 * width - hlogo.offsetWidth - hright.offsetWidth - happ.offsetWidth - 55) + "px";
+    });
+    </script>
+
+
 
     <!-- BODY -->
     <div id="body">

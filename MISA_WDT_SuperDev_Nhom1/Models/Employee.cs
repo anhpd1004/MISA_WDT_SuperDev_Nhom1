@@ -62,7 +62,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
         /// <summary>
         /// Ngày thử việc
         /// </summary>
-        public string TrialDate { get; set; }
+        public DateTime TrialDate { get; set; }
         /// <summary>
         /// Ngày chính thức
         /// </summary>

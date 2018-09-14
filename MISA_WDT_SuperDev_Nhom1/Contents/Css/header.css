@@ -2,13 +2,13 @@
 /* CSS FOR HEADER */
 #header {
     background-color: #0277bd;
-    width: 100%;
     height: 50px;
 }
 
 .header-logo {
     float: left;
     width: 230px;
+    min-width: 230px;
     height: 50px;
 }
 
@@ -23,6 +23,7 @@
 
 .logo-amis-vn {
     width: 190px;
+    min-width: 190px;
     background: url("../Images/general/logo.png") no-repeat 0 center;
     height: 50px;
     float: left;
@@ -46,25 +47,29 @@
     margin-top: 10px;
     background-color:#0a5796;
     border-radius: 3px;
+    /*width: 26%;*/
+    min-width: 224px;
 }
 
 .header-search-box .search-item {
     width: 16px;
     height: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* float: right; */
     cursor: pointer;
 }
 .header-search-box .search-icon {
     background: url("../Images/header/search.png") no-repeat center center;
     cursor: default !important;
+    float: left;
 }
 .header-search-box .search-settings {
     background: url("../Images/header/qs-setting.png") no-repeat center center;
     border-left: 1px solid #fff !important;
     height: 22px !important;
     margin-top: 4px !important;
+    float: right;
 }
 
 .header-search-box .search-input {
@@ -73,7 +78,12 @@
     color: #fff !important;
     height: 26px;
     line-height: 26px;
-    width: 250px;
+    width: calc(100% - 50px * 2);
+    width: -moz-calc(100% - 50px * 2);
+    width: -webkit-calc(100% - 50px * 2);
+
+    /* width: 64px; */
+    min-width: 100px;
     padding-left: 5px;
     float: left;
     margin-top: 2px;
@@ -83,9 +93,13 @@
 .header-search-box .search-input:focus {
     outline: none !important;
 }
-
+.header-flex-empty {
+    float: left;
+    height: 50px;
+    min-width: 50px;
+}
 .header-right {
-    float: right;
+    float: left;
 }
 .header-right .item {
     float: left;

@@ -189,8 +189,10 @@
     <Content Include="Contents\Images\sidebar\utility.png" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\Employee.js" />
     <Content Include="Scripts\Event.js" />
+    <Content Include="Scripts\GetData.js" />
     <Content Include="Scripts\LoadFile.js" />
     <Content Include="Views\AddEmployee.html" />
     <Content Include="Views\AddEmployeeAddress.html" />
