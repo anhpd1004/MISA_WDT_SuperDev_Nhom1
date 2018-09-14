@@ -17,4 +17,5 @@ class LoadFile
     EmployeeTable(path, selector) {}
     //
     ExtendedInformation(path, selector) {}
+
 }

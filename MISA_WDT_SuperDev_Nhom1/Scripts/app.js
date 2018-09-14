@@ -1,0 +1,1 @@
+﻿//Viết các mã js xử lý trực tiếp với giao diện

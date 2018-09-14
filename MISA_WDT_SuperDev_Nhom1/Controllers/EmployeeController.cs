@@ -13,10 +13,17 @@ namespace MISA_WDT_SuperDev_Nhom1.Controllers
 
 
         // GET: api/Employee
-        public IEnumerable<string> Get()
+        public IEnumerable<Employee> Get()
         {
-            
-            return new List<string>();
+            List<Employee> employees = new List<Employee>();
+
+            //Get data
+            DatabaseAccess da = new DatabaseAccess();
+            employees = da.Select();
+            da.Dispose();
+
+            employees.OrderBy(n => n.EmployeeCode);
+            return employees;
         }
 
         // GET: api/Employee/5
