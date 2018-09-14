@@ -707,7 +707,7 @@
                 </div>
             </div>
 
-            <div class="employee-table">
+            <div class="employee-table" style="overflow-x: hidden; overflow-y: auto; height: calc(50vh - 50px);">
                 <div class="employee-table-primary">
                     <div class="employee-table-list-customer">
                         <table>
@@ -741,15 +741,8 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody class="employee-table-list-customer-tbody">
-                                <tr class="employee-table-list-line-x">
-                                    <td>KH00201</td>
-                                    <td>Phạm Công Danh</td>
-                                </tr>
-                                <tr class="employee-table-list-line-y">
-                                    <td>KH00202</td>
-                                    <td>Trần Thu Phương</td>
-                                </tr>
+                            <tbody id="tbody-left" class="employee-table-list-customer-tbody">
+                                <!-- Database -->
                             </tbody>
                         </table>
                     </div>
@@ -894,33 +887,8 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody class="employee-table-list-customer-tbody">
-                                <tr class="employee-table-list-line-x">
-                                    <td>Nam</td>
-                                    <td>22/12/1996</td>
-                                    <td>Đại học</td>
-                                    <td>Học viện mật mã</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td>Nhân viên</td>
-                                    <td>MISA</td>
-                                    <td>25/7/2018</td>
-                                    <td>15/9/2018</td>
-                                    <td>Hợp đồng dài hạn</td>
-                                    <td>Đang công tác</td>
-                                </tr>
-                                <tr class="employee-table-list-line-y">
-                                    <td>Nữ</td>
-                                    <td>20/6/1996</td>
-                                    <td>Cao đẳng</td>
-                                    <td>Bách khoa Hà Nội</td>
-                                    <td>Công nghệ thông tin</td>
-                                    <td>Nhân viên</td>
-                                    <td>MISA</td>
-                                    <td>25/7/2018</td>
-                                    <td>15/9/2018</td>
-                                    <td>Hợp đồng dài hạn</td>
-                                    <td>Đang nghỉ đẻ</td>
-                                </tr>
+                            <tbody id="tbody-right" class="employee-table-list-customer-tbody" style="overflow-x: auto; overflow-y: hidden;">
+                               <!-- database -->
                             </tbody>
                         </table>
                     </div>
@@ -1050,5 +1018,12 @@
         </div>
     </div>
 
+    <script src="Scripts/Libs/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/Libs/jquery-ui.min.js"></script>
+    <script src="Scripts/Employee.js"></script>
+    <script src="Scripts/Event.js"></script>
+    <script src="Scripts/LoadFile.js"></script>
+    <script src="Scripts/GetData.js"></script>
+    <script src="Scripts/app.js"></script>
 </body>
 </html>
