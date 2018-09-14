@@ -15,7 +15,8 @@ namespace MISA_WDT_SuperDev_Nhom1.Controllers
         // GET: api/Employee
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            
+            return new List<string>();
         }
 
         // GET: api/Employee/5
@@ -27,6 +28,9 @@ namespace MISA_WDT_SuperDev_Nhom1.Controllers
         // POST: api/Employee
         public void Post([FromBody]string value)
         {
+            DatabaseAccess da = new DatabaseAccess();
+            da.FakeData();
+            da.Dispose();
         }
 
         // PUT: api/Employee/5

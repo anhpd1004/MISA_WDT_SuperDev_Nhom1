@@ -14,7 +14,7 @@
     <meta name="author" content="MISA_WDT_SuperDev_Nhom1, Pham Duy Anh, Do Huy Hoang, Le Tien Thanh, Hoang Thu Uyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add favicon for website -->    
+    <!-- Add favicon for website -->
     <link href="./Contents/Images/header/amis_vn.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- /// -->
@@ -27,6 +27,9 @@
     <link href="Contents/Css/sidebar.css" rel="stylesheet" />
     <link href="Contents/Css/submenu.css" rel="stylesheet" />
     <link href="Contents/Css/SearchSettings.css" rel="stylesheet" />
+    <link href="Contents/Css/datacontent.css" rel="stylesheet" />
+    <link href="Contents/Css/AddEmployeeAddress.css" rel="stylesheet" />
+    <link href="Contents/Css/Information.css" rel="stylesheet" />
 
 </head>
 
@@ -612,7 +615,414 @@
         <!-- DATA CONTENT -->
         <div class="data-content">
             <!-- Bảng nhân viên -->
-            <div></div>
+            <div class="employee-profile-title">
+                <div class="employee-profile-title-left">
+                    <div class="title-item-font-x">
+                        Hồ sơ nhân viên
+                    </div>
+                    <div class="title-icon-sp toolbar_item_icon"></div>
+                    <div class="title-item-font-y">
+                        Hồ sơ
+                    </div>
+                </div>
+                <div class="employee-profile-title-right" style="display:flex">
+                    <div class="employee-profile-title-company">
+                        <span class="toolbar-item-icon-tree toolbar_item_icon"></span>
+                        <input class="title-item-font-z" title="Công ty cổ phần MISA" />
+                        <span class="toolbar-item-icon-select toolbar_item_icon"></span>
+                    </div>
+                    <div class="employee-profile-title-state">
+                        <input class="title-item-font-z" title="Đang làm việc" />
+                        <span class="toolbar-item-icon-select toolbar_item_icon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="employee-profile-toolbar-item">
+                <div class="employee-profile-menu-item">
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-add toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Thêm</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-view toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Xem</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-delete toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Xóa</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-print toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">In</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-mail toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Gửi mail hàng loạt</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-report toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Báo cáo</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-load toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Nạp</span>
+                        <span class="toolbar-item-icon-select toolbar_item_icon"></span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-utility toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Tiện ích</span>
+                        <span class="toolbar-item-icon-select toolbar_item_icon"></span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-feedback toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Phản hồi</span>
+                    </a>
+                    <a class="toolbar-item">
+                        <span class="toolbar-item-icon-help toolbar_item_icon"></span>
+                        <span class="toolbar-item-text">Giúp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="employee-table">
+                <div class="employee-table-primary">
+                    <div class="employee-table-list-customer">
+                        <table>
+                            <thead class="employee-table-list-customer-thead">
+                                <tr>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Mã nhân viên
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Họ và tên
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="employee-table-list-customer-tbody">
+                                <tr class="employee-table-list-line-x">
+                                    <td>KH00201</td>
+                                    <td>Phạm Công Danh</td>
+                                </tr>
+                                <tr class="employee-table-list-line-y">
+                                    <td>KH00202</td>
+                                    <td>Trần Thu Phương</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="employee-table-state">
+                    <div class="employee-table-list-customer">
+                        <table>
+                            <thead class="employee-table-list-customer-thead">
+                                <tr>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Giới tính
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Ngày sinh
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Trình độ đào tạo
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Nơi đào tạo
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Chuyên ngành
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Vị trí công việc
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Đơn vị công tác
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Ngày thử việc
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Ngày chính thức
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Loại hợp đồng
+                                    </td>
+                                    <td class="employee-table-gridPanel-header-item-title">
+                                        Trạng thái
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-date toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-date toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-date toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="employee-table-gridPanel-header-item-filter">
+                                            <a class="employee-table-select-filter">∗</a>
+                                            <div>
+                                                <input class="employee-table-input-filter" elementtype="filterInput" fieldname="" />
+                                            </div>
+                                            <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="employee-table-list-customer-tbody">
+                                <tr class="employee-table-list-line-x">
+                                    <td>Nam</td>
+                                    <td>22/12/1996</td>
+                                    <td>Đại học</td>
+                                    <td>Học viện mật mã</td>
+                                    <td>Công nghệ thông tin</td>
+                                    <td>Nhân viên</td>
+                                    <td>MISA</td>
+                                    <td>25/7/2018</td>
+                                    <td>15/9/2018</td>
+                                    <td>Hợp đồng dài hạn</td>
+                                    <td>Đang công tác</td>
+                                </tr>
+                                <tr class="employee-table-list-line-y">
+                                    <td>Nữ</td>
+                                    <td>20/6/1996</td>
+                                    <td>Cao đẳng</td>
+                                    <td>Bách khoa Hà Nội</td>
+                                    <td>Công nghệ thông tin</td>
+                                    <td>Nhân viên</td>
+                                    <td>MISA</td>
+                                    <td>25/7/2018</td>
+                                    <td>15/9/2018</td>
+                                    <td>Hợp đồng dài hạn</td>
+                                    <td>Đang nghỉ đẻ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="employee-record-summary">
+                <div class="employee-record-summary-x">
+                    Tổng số:
+                    <span class="employee-record-summary-y">2</span>
+                    bản ghi
+                </div>
+            </div>
+
+
+
+            <!-- /// -->
+            <!-- Created by: Huy Hoàng -->
+            <!-- Created at: 11/09/2018 -->
+            <!-- Description: DATA CONTENT -->
+            <!-- /// -->
+            <div class="Information-Employee">
+                <div class="Header-Information">
+                    <div>
+                        <div class="item-header-left">Tổng số:<span>279 bản ghi</span></div>
+                    </div>
+                    <div>
+                        <div class="toolbar-item-icon-select toolbar-item-icon-select-x toolbar_item_icon" style="background-color:white"></div>
+                        <!--<div class="item-header-center"><span id="Span-Information"><a>dfdfdf<i class="fa fa-caret-down"></i></a></span></div>-->
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="Header-Menu">
+                    <div class="icon-span">
+                        <div>
+                            <span><a><i class="fa fa-caret-left" style="font-size:25px;color:#eeecec"></i></a></span>
+                        </div>
+                    </div>
+                    <div id="item1">
+                        <span><a href="#">1.THÔNG TIN CHUNG </a></span>
+                    </div>
+                    <div id="item2">
+                        <span><a href="#">2.THÔNG TIN LIÊN HỆ </a></span>
+                    </div>
+                    <div id="item3">
+                        <span><a href="#">3.GIA ĐÌNH</a></span>
+                    </div>
+                    <div id="item4">
+                        <span><a href="#">4.HỢP ĐỒNG LAO ĐỘNG</a></span>
+                    </div>
+                    <div id="item5">
+                        <span><a href="#">5.QUÁ TRÌNH CÔNG TÁC</a></span>
+                    </div>
+                    <div id="item6">
+                        <span><a href="#">6.THU NHẬP THƯỜNG</a></span>
+                    </div>
+                    <div id="item7">
+                        <span><a href="#"><i class="fa fa-caret-right" style="font-size:25px;color:#eeecec"></i></a></span>
+                    </div>
+                    <div id="item8">
+                        <span style="font-size:15px;font-weight:bold;"><a href="#">...</a></span>
+                    </div>
+                    <div id="item9">
+                        <span><a href="#"><i class="fa fa-gear" style="font-size:24px"></i></a></span>
+                    </div>
+                </div>
+                <div class="Main-Information">
+                    <div class="Main-Information-left">
+                        <img src="/Contents/Images/anh1.jpg" style="width:60%;height:80%" />
+                    </div>
+                    <div class="Main-Information-right">
+                        <div class="Main-Information-right1">
+                            <div id="content-information">
+                                <span id="Title-Employee">Mã nhân viên:</span>
+                                <div id="row1">NVTCT00773</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Họ tên:</span>
+                                <div id="row1">Bùi Như Nấm</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Giới tính:</span>
+                                <div id="row1">Nam</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày sinh:</span>
+                                <div id="row1">13/08/1994</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Số CMT:</span>
+                                <div id="row1">1254552154</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Hộ chiếu:</span>
+                                <div id="row1"></div>
+                            </div>
+
+                        </div>
+                        <div class="Main-Information-right2">
+                            <div id="content-information">
+                                <span id="Title-Employee">Vị trí công việc:</span>
+                                <div id="row1">Nhân viên Hành chính</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Đơn vị công tác:</span>
+                                <div id="row1">Công ty Cổ Phần MISA</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày thử việc:</span>
+                                <div id="row1"></div>
+                            </div>
+
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày chính thức:</span>
+                                <div id="row1"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- hien thi muc them khach hang -->
+                <div id="lam-mo-nen"></div>
+                <div id="them-khach-hang-moi"></div>
+            </div>
 
             <!-- Thông tin nhân viên -->
         </div>

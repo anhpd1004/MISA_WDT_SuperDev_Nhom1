@@ -1,1 +1,104 @@
-﻿
+﻿/* CSS FOR BODY */
+
+.employee-table {
+    display: flex;
+    padding: 10px 0px 0px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0px;
+    overflow-y: scroll;
+}
+
+.employee-table-primary {
+    overflow-x: unset;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0px;
+}
+
+.employee-table-state {
+    margin-left: -5px;
+    overflow-x: scroll;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0px;
+}
+
+.employee-table-list-customer {
+    margin-left: -1px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    font-size: 13px;
+}
+
+.employee-table-gridPanel-header-item-title {
+    height: 26px;
+    width: 200px;
+    text-align: center;
+    background-color: #ededed;
+    border: 1px solid #dbdbdb;
+}
+
+.employee-table-gridPanel-header-item-filter {
+    display: flex;
+}
+
+.employee-table-select-filter {
+    height: 32px;
+    width: 25px;
+    color: #808080;
+    background-color: #fcfcfc;
+    border: 1px solid #cccccc;
+}
+
+.employee-table-input-filter {
+    height: 32px;
+    width: 100px;
+    margin-left: -1px;
+    margin-right: -1px;
+    border: 1px solid #cfcfcf;
+}
+
+.toolbar-item-icon-select-x {
+    height: 22px;
+    width: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: white;
+    border: 1px solid #cfcfcf;
+}
+
+.employee-table-list-customer-tbody {
+
+}
+
+.employee-table-list-line-x {
+    background-color: #fff !important;
+}
+
+.employee-table-list-line-y {
+    background-color: #f6f6f6 !important;
+}
+
+.employee-record-summary {
+    border: 1px solid #dbdbdb;
+    border-top: 0px;
+    padding: 0px 0px 10px 10px;
+    background-color: #f0f0f0;
+}
+
+.employee-record-summary-x {
+    height: 25px;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    margin-top: -1px;
+    background-color: white !important;
+}
+
+.employee-record-summary-y {
+    font-weight: bold;
+}

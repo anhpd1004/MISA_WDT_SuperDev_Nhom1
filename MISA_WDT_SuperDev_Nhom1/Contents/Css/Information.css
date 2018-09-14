@@ -1,0 +1,190 @@
+﻿/*
+    created by:Do Huy Hoang
+    dated by:11/9/2018
+   css for information employee.
+*/
+
+.Information-Employee {
+    width: 100%;
+    height: calc(50vh-50px);
+    height: -moz-calc(50vh-50px);
+    height: -webkit-calc(50vh-50px);
+
+    font-family: Arial;
+    font-weight: 300;
+    /*margin-left:10px;*/
+}
+/*start css for header-information*/
+.Header-Information {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #f1e8e8;
+    box-sizing: border-box;
+    position:relative;
+}
+.item-header-left {
+    /*margin-left:2%;
+    margin-top:7px;*/
+    float:left;
+    position:absolute;
+    left:2px;
+    top:5px;
+}
+
+.item-header-center {
+    position: absolute;
+    left: 50%;
+    top:10px;
+}
+
+#Span-Information {
+    
+    border-left: 0.5px solid #808080;
+    border-right: 0.5px solid #808080;
+    border-top: 0.5px solid #808080;
+}
+/*end css for header information*/
+
+/*start css for menu-information*/
+
+.Header-Menu {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #f1e8e8;
+    position:relative; 
+    box-sizing:border-box;
+
+}
+.icon-span {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    float: left;
+}
+#item1 {
+    float: left;
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    margin-right: 10%;
+    max-width: 150px;
+    color: #000000;
+}
+#item2 {
+    float: left;
+    position: absolute;
+    left: 190px;
+    top: 14px;
+
+}
+#item3 {
+    float: left;
+    position: absolute;
+    left: 365px;
+    top: 14px;
+}
+#item4 {
+    float: left;
+    position: absolute;
+    left: 465px;
+    top: 14px;
+    max-width: 250px;
+}
+#item5 {
+    float: left;
+    position: absolute;
+    left: 665px;
+    top: 14px;
+}
+
+#item6 {
+    float: left;
+    position: absolute;
+    left: 880px;
+    top: 14px;
+}
+#item7 {
+    float: left;
+    position: absolute;
+    left: 1040px;
+    top: 14px;
+}
+#item8 {
+    float: left;
+    position: absolute;
+    left: 1060px;
+    top: 14px;
+}
+#item9 {
+    float: left;
+    position: absolute;
+    left: 1080px;
+    top: 14px;
+}
+.Header-Menu a {
+    text-decoration: none;
+}
+.Header-Menu a:hover{
+    color:#1451b2;
+    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-color:#1451b2;
+}
+.Header-Menu #item1 {
+        
+        margin-right: 35px;
+        margin-top: 14px;
+}
+
+
+    /*end css for information*/
+
+/* start css cho phan information main */
+
+.Main-Information {
+        width: 100%;
+        height: 75%;
+        background-color: #ff6a00;
+    }
+.Main-Information-left {
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+    float:left;
+}
+.Main-Information-left img {
+    margin-top:10px;
+    margin-left:50px;
+}
+ .Main-Information-right {
+        width: 85%;
+        height: 100%;
+        background-color: #ffffff;
+        float: right;
+    }
+.Main-Information-right1 {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+}
+.Main-Information-right2 {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+}
+.Main-Information-right span {
+    float:left;
+}
+#row1{
+    font-weight:bold;
+}
+#Title-Employee{
+    margin-left:2%;
+    width:25%;
+}
+#content-information{
+    padding:0.5%;
+    clear:left;
+}

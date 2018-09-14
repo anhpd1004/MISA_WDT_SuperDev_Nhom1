@@ -73,14 +73,68 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contents\Css\AddEmployeeAddress.css" />
+    <Content Include="Contents\Css\datacontent.css" />
+    <Content Include="Contents\Css\Information.css" />
     <Content Include="Contents\Css\SearchSettings.css" />
     <Content Include="Contents\Css\submenu.css" />
     <Content Include="Contents\Css\sidebar.css" />
     <Content Include="Contents\Css\style.css" />
     <Content Include="Contents\Css\header.css" />
     <Content Include="Contents\Css\table.css" />
+    <Content Include="Contents\Icons\accomplishment.png" />
+    <Content Include="Contents\Icons\add16.png" />
+    <Content Include="Contents\Icons\arr_down.png" />
+    <Content Include="Contents\Icons\arr_right.png" />
+    <Content Include="Contents\Icons\close16.png" />
+    <Content Include="Contents\Icons\contact.png" />
+    <Content Include="Contents\Icons\date-trigger.png" />
+    <Content Include="Contents\Icons\delete-24.png" />
+    <Content Include="Contents\Icons\delete16.png" />
+    <Content Include="Contents\Icons\dictionary.png" />
+    <Content Include="Contents\Icons\gui-email-hang-loat.png" />
+    <Content Include="Contents\Icons\home.png" />
+    <Content Include="Contents\Icons\ImageHandler %281%29.png" />
+    <Content Include="Contents\Icons\ImageHandler.png" />
+    <Content Include="Contents\Icons\logo.png" />
+    <Content Include="Contents\Icons\menu-quick-report.png" />
+    <Content Include="Contents\Icons\notification-hover.png" />
+    <Content Include="Contents\Icons\notification.png" />
+    <Content Include="Contents\Icons\print16.png" />
+    <Content Include="Contents\Icons\procedure.png" />
+    <Content Include="Contents\Icons\profile.png" />
+    <Content Include="Contents\Icons\qs-setting.png" />
+    <Content Include="Contents\Icons\question16.png" />
+    <Content Include="Contents\Icons\recruitment.png" />
+    <Content Include="Contents\Icons\refresh16.png" />
+    <Content Include="Contents\Icons\reject16.png" />
+    <Content Include="Contents\Icons\report %281%29.png" />
+    <Content Include="Contents\Icons\report %282%29.png" />
+    <Content Include="Contents\Icons\report.png" />
+    <Content Include="Contents\Icons\salary %281%29.png" />
+    <Content Include="Contents\Icons\salary.png" />
+    <Content Include="Contents\Icons\save16.png" />
+    <Content Include="Contents\Icons\saveadd16.png" />
+    <Content Include="Contents\Icons\setting16.png" />
+    <Content Include="Contents\Icons\sound16.png" />
+    <Content Include="Contents\Icons\task.png" />
+    <Content Include="Contents\Icons\train.png" />
+    <Content Include="Contents\Icons\tree-trigger.png" />
+    <Content Include="Contents\Icons\utility.png" />
+    <Content Include="Contents\Icons\utility16.png" />
+    <Content Include="Contents\Icons\view16.png" />
     <Content Include="Contents\Images\general\accomplishment.png" />
     <Content Include="Contents\Images\general\add16.png" />
+    <Content Include="Contents\Images\general\arr_down.png" />
+    <Content Include="Contents\Images\general\arr_right.png" />
+    <Content Include="Contents\Images\general\date-trigger.png" />
+    <Content Include="Contents\Images\general\delete16.png" />
+    <Content Include="Contents\Images\general\gui-email-hang-loat.png" />
+    <Content Include="Contents\Images\general\home.png" />
+    <Content Include="Contents\Images\general\ImageHandler.png" />
+    <Content Include="Contents\Images\general\notification-hover.png" />
+    <Content Include="Contents\Images\general\profile.png" />
+    <Content Include="Contents\Images\general\salary.png" />
+    <Content Include="Contents\Images\general\tree-trigger.png" />
     <Content Include="Contents\Images\header\amis_vn.png" />
     <Content Include="Contents\Images\general\app-icon.png" />
     <Content Include="Contents\Images\general\close16.png" />
@@ -175,7 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Contents\Icons\" />
     <Folder Include="Scripts\Libs\" />
   </ItemGroup>
   <PropertyGroup>

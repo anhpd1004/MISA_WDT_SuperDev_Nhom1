@@ -1,0 +1,164 @@
+﻿/* CSS FOR BODY */
+
+.data-content {
+    height: -webkit-calc(100vh - 50px);
+    width: -webkit-calc(100vw - 250px);
+    float: right;
+    color: black;
+    font-size: 13px;
+    margin-right: 10px;
+    overflow: hidden !important;
+}
+
+.employee-profile-title {
+    height: 30px;
+    width: 100%;
+    padding-top: 6px;
+    background-color: white;
+}
+
+.employee-profile-title-left {
+    display: flex !important;
+    float: left;
+}
+
+.title-item-font-x {
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0277bd;
+}
+
+.title-icon-sp {
+    background: url('../Icons/arr_right.png') top center no-repeat;
+    background-position-y: 5px;
+    margin-left: 8px !important;
+    margin-right: 0px !important;
+}
+
+.title-item-font-y {
+    padding-left: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.employee-profile-title-right {
+    float: right;
+}
+
+.employee-profile-title-company {
+    height: 36px;
+    width: 300px;
+    margin-top: -6px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+}
+
+.employee-profile-title-state {
+    height: 36px;
+    width: 180px;
+    margin-top: -6px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+}
+
+.title-item-font-z {
+    width: 250px;
+    border: 0px;
+    margin-left: -1px;
+}
+
+.employee-profile-toolbar-item {
+    height: 32px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+.employee-profile-menu-item {
+    height: 25px;
+    padding-top: 5px;
+}
+
+.toolbar-item-text {
+    padding-bottom: 5px
+}
+
+.toolbar_item_icon {
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 5px 10px 5px 8px;
+}
+
+.toolbar-item-icon-add {
+    background: url('../Icons/add16.png') top center no-repeat;
+    background-position-y: 5px;
+}
+
+.toolbar-item-icon-view {
+    background: url('../Icons/view16.png') top center no-repeat;
+    background-position-y: 5px;
+}
+
+.toolbar-item-icon-delete {
+    background: url('../Icons/delete16.png') top center no-repeat;
+    background-position-y: 5px;
+}
+
+.toolbar-item-icon-print {
+    background: url('../Icons/print16.png') top center no-repeat;
+    background-position-y: 5px;
+}
+
+.toolbar-item-icon-mail {
+    background: url('../Icons/gui-email-hang-loat.png') top center no-repeat;
+    background-position-y: 6px;
+}
+
+.toolbar-item-icon-report {
+    background: url('../Icons/report (1).png') top center no-repeat;
+    background-position-y: 4px;
+}
+
+.toolbar-item-icon-load {
+    background: url('../Icons/refresh16.png') top center no-repeat;
+    background-position-y: 5px;
+}
+
+.toolbar-item-icon-utility {
+    background: url('../Icons/utility16.png') top center no-repeat;
+    background-position-y: 4px;
+}
+
+.toolbar-item-icon-feedback {
+    background: url('../Icons/sound16.png') top center no-repeat;
+    background-position-y: 0px;
+}
+
+.toolbar-item-icon-help {
+    background: url('../Icons/question16.png') top center no-repeat;
+    background-position-y: 3px;
+}
+
+.toolbar-item-icon-select {
+    background: url('../Icons/arr_down.png') top center no-repeat;
+    background-position-y: 12px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.toolbar-item-icon-date {
+    background: url('../Icons/date-trigger.png') top center no-repeat;
+    background-position-y: 8px;
+}
+
+.toolbar-item-icon-tree {
+    background: url('../Icons/tree-trigger.png') top center no-repeat;
+    background-position-y: 10px;
+}
