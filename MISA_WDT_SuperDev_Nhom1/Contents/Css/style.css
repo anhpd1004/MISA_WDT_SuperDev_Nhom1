@@ -130,8 +130,8 @@ a {
 /*Ẩn hiện */
 
 .hide {
-    display: none !important;
+    display: none;
 }
 .show {
-    display: block !important;
+    display: block;
 }

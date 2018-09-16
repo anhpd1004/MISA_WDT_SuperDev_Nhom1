@@ -17,5 +17,28 @@ class LoadFile
     EmployeeTable(path, selector) {}
     //
     ExtendedInformation(path, selector) {}
-
+    //
+    ImportDictionary() {
+        $.ajax({
+            url: "/Views/Dictionary.html",
+            type: "GET",
+            datatype: "html",
+            asyns: true,
+            success: function(response) {
+                $("#dictionary-submenu").html(response);
+            }
+        });
+    }
+    //
+    ImportReport() {
+        $.ajax({
+            url: "/Views/Report.html",
+            type: "GET",
+            datatype: "html",
+            asyns: true,
+            success: function(response) {
+                $("#report-submenu").html(response);
+            }
+        });
+    }
 }

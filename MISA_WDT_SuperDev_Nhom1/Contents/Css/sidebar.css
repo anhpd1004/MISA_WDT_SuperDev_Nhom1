@@ -23,6 +23,7 @@
 }
 
 .menu-item a {
+    height: 18px;
     display: block;
     width: 100%;
     padding: 7px 0;
@@ -47,12 +48,15 @@
 .cls-menu-right {
     color: white;
     font-weight: 300;
+    margin-left: 30px;
+    line-height: 18px;
+    height:  18px;
 }
 
 .cls-icon-menu {
     background: url("../images/iconMenu.png") no-repeat;
-    width: 16px;
-    height: 24px;
+    width: 20px;
+    height: 18px;
     float: left;
     margin: -4px 5px 0 5px;
 }
@@ -124,11 +128,17 @@
 }
 
 .add-arrow-icon-click {
-    background-image: url("../images/iconMenu.png");
-    background-position: 202px -290px;
+    background-image: url("../Images/sidebar/iconMenu.png");
+    background-position: 205px -290px;
     background-repeat: no-repeat;
 }
 
 .active-item {
-    background-color: #0199fc;
+    background-color: #eda235;
+}
+.width-30 {
+    width: 30px !important;
+}
+.width-230 {
+    width: 230px !important;
 }

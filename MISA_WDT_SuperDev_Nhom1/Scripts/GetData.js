@@ -2,9 +2,9 @@
     GetEmployees() {
         $.ajax({
             url: "/api/Employee",
+            type: "GET",
             datatype: "json",
             asyns: false,
-            method: "GET",
             success: function(response) {
                 
                 for(var i = 0; i < response.length; i++) {
@@ -34,6 +34,21 @@
                     $("#tbody-left").append(rowLeft);
                     $("#tbody-right").append(rowRight);
                 }
+            },
+            fail: function(response) {
+                alert("Fail");
+            }
+        });
+    }
+    //get employee
+    GetEmployee(pattern) {
+        $.ajax({
+            url: "/api/Employee?pattern=" + pattern,
+            datatype: "json",
+            asyns: false,
+            method: "GET",
+            success: function(response) {
+                //return response
             },
             fail: function(response) {
                 alert("Fail");

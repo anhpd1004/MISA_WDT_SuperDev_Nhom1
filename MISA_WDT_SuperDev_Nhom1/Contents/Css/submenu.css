@@ -2,7 +2,7 @@
     clear: both;
 }
 .sidebar-submenu {
-    display: block;
+    display: none;
     min-width: 280px;
     position: absolute;
     left: 230px;
@@ -76,7 +76,7 @@
     width: 180px;
 }
 .pn-sub-menu .child-content:hover {
-    background-color: #f1a231;
+    background-color: #eda235;
 }
 .sub-menu-item {
     display: block;
@@ -90,5 +90,5 @@
     margin-right: 1px;
 }
 .sub-menu-item:hover {
-    background-color: #f1a231;;
+    background-color: #eda235;
 }

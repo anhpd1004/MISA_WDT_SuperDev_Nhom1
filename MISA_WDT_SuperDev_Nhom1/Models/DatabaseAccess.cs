@@ -14,16 +14,19 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
 
         private SqlConnection _sqlConnection;
 
-        public static void Main()
+        private List<Employee> _listEmployee;
+
+        public List<Employee> ListEmployee
         {
-            DatabaseAccess da = new DatabaseAccess();
-            da.FakeData();
-            da.Dispose();
-            System.Console.WriteLine("done");
+            get { return this._listEmployee; }
+            private set { this._listEmployee = value; }
         }
 
         public DatabaseAccess()
         {
+
+            this._listEmployee = new List<Employee>();
+
             //Nếu SqlConnection chưa được khởi tạo thì khởi tạo mới 
             if (this._sqlConnection == null)
             {
@@ -38,10 +41,8 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
         /// 
         /// </summary>
         /// <returns></returns>
-        public List<Employee> Select()
+        public bool Select(string _sqlQuery)
         {
-            //danh sách nhân viên lấy được từ db
-            List<Employee> employees = new List<Employee>();
             Employee employee;
 
             //tao cau truy van
@@ -51,7 +52,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
             _sqlCommand.CommandType = CommandType.Text;
 
             //Khai báo câu lệnh truy vấn
-            _sqlCommand.CommandText = "SELECT * FROM Employee";
+            _sqlCommand.CommandText = _sqlQuery;
 
             //Thực hiện truy vấn lấy dữ liệu thông qua SqlDataAdapter
             SqlDataReader _sqlDataReader = _sqlCommand.ExecuteReader();
@@ -77,9 +78,9 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
                 employee.OfficalDate = DateTime.Parse(_sqlDataReader["OfficalDate"].ToString());
                 employee.ContractType = _sqlDataReader["ContractType"].ToString();
                 employee.State = _sqlDataReader["State"].ToString();
-                employees.Add(employee);
+                this._listEmployee.Add(employee);
             }
-            return employees;
+            return true;
         }
 
         public int Insert(Employee employee)
@@ -116,6 +117,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
 
                 // open connection, execute INSERT, close connection
                 cmd.ExecuteNonQuery();
+                this._listEmployee.Add(employee);
             }
             return 1;
         }

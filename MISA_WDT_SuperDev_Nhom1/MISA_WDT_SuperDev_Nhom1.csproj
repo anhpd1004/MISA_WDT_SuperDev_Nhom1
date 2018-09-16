@@ -141,6 +141,7 @@
     <Content Include="Contents\Images\general\contact.png" />
     <Content Include="Contents\Images\general\delete-24.png" />
     <Content Include="Contents\Images\general\dictionary.png" />
+    <Content Include="Contents\Images\header\logout-icon.png" />
     <Content Include="Contents\Images\sidebar\accomplishment.png" />
     <Content Include="Contents\Images\sidebar\arrow.png" />
     <Content Include="Contents\Images\sidebar\contact.png" />
@@ -156,6 +157,7 @@
     <Content Include="Contents\Images\general\notification.png" />
     <Content Include="Contents\Images\general\print16.png" />
     <Content Include="Contents\Images\general\procedure.png" />
+    <Content Include="Contents\Images\sidebar\iconMenu.png" />
     <Content Include="Contents\Images\sidebar\menu-quick-report.png" />
     <Content Include="Contents\Images\sidebar\procedure.png" />
     <Content Include="Contents\Images\sidebar\profile.png" />
@@ -207,7 +209,7 @@
     <Content Include="Views\HeaderApplication.html" />
     <Content Include="Views\HeaderSettings.html" />
     <Content Include="Views\Information.html" />
-    <Content Include="Views\Task.html" />
+    <Content Include="Views\Report.html" />
     <Content Include="Views\test.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

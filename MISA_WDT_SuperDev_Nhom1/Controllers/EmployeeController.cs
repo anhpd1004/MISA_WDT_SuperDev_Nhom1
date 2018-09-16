@@ -15,22 +15,47 @@ namespace MISA_WDT_SuperDev_Nhom1.Controllers
         // GET: api/Employee
         public IEnumerable<Employee> Get()
         {
-            List<Employee> employees = new List<Employee>();
-
             //Get data
             DatabaseAccess da = new DatabaseAccess();
-            employees = da.Select();
+            if(da.ListEmployee.Count == 0) 
+                da.Select("SELECT * FROM Employee");
             da.Dispose();
 
-            employees.OrderBy(n => n.EmployeeCode);
-            return employees;
+            return da.ListEmployee.OrderBy(n => n.EmployeeCode).ToList();
         }
 
         // GET: api/Employee/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //public Employee Get(Guid EmployeeID)
+        //{
+        //    Employee employee = new Employee();
+
+        //    //Get data
+        //    DatabaseAccess da = new DatabaseAccess();
+        //    string _sqlQuery = "SELECT * FROM Employee AS E" +
+        //                       "WHERE E.EmployeeID = " + EmployeeID;
+        //    List<Employee> employees = da.SelectById(_sqlQuery);
+        //    if (employees.Count > 0)
+        //        employee = employees[0];
+        //    da.Dispose();
+
+        //    return employee;
+        //}
+        // GET: api/Employee/5
+        //public Employee Get(string pattern)
+        //{
+        //    Employee employee = new Employee();
+
+        //    //Get data
+        //    DatabaseAccess da = new DatabaseAccess();
+        //    string _sqlQuery = "SELECT * FROM Employee AS E" +
+        //                       "WHERE E.EmployeeName like N'%" + pattern + "%'";
+        //    List<Employee> employees = da.Select(_sqlQuery);
+        //    if (employees.Count > 0)
+        //        employee = employees[0];
+        //    da.Dispose();
+
+        //    return employee;
+        //}
 
         // POST: api/Employee
         public void Post([FromBody]string value)
