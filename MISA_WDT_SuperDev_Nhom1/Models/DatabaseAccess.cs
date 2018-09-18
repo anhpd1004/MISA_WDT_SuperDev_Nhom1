@@ -116,10 +116,9 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
 
 
                 // open connection, execute INSERT, close connection
-                cmd.ExecuteNonQuery();
                 this._listEmployee.Add(employee);
+                return cmd.ExecuteNonQuery();
             }
-            return 1;
         }
 
         public int FakeData()
@@ -191,10 +190,79 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
             if (k < 10000) return "NV0" + k;
             return "NV" + k;
         }
-
-        public bool Update()
+        /// <summary>
+        /// Xóa bản ghi dựa vào ID của nhân viên
+        /// </summary>
+        /// <param name="employeeID">Employee ID</param>
+        /// <returns>Số bản ghi bị xóa khỏi database</returns>
+        public int Delete(Guid employeeID)
         {
-            return true;
+            string query = "DELETE FROM Employee WHERE EmployeeID='" + employeeID + "'";
+            using (SqlCommand _sqlCommand = new SqlCommand(query, this._sqlConnection))
+            {
+                return _sqlCommand.ExecuteNonQuery();
+            }
+        }
+        public int Delete(string pattern)
+        {
+            string query = "DELETE FROM Employee WHERE EmployeeName like N'%" + pattern + "%'";
+            query += "OR EmployeeCode='" + pattern + "'";
+            query += "OR CompanyName='" + pattern + "'";
+            using (SqlCommand _sqlCommand = new SqlCommand(query, this._sqlConnection))
+            {
+                return _sqlCommand.ExecuteNonQuery();
+            }
+        }
+
+        public int Update(Employee employee, Guid employeeID)
+        {
+            string query = "UPDATE Employee AS e" +
+                           "SET e.State = @State";
+            query += " e.EmployeeCode = @EmployeeCode,";
+            query += " e.EmployeeName = @EmployeeName,";
+            query += " e.Gender = @Gender,";
+            query += " e.Address = @Address,";
+            query += " e.Birthday = @Birthday,";
+            query += " e.NumberPhone = @NumberPhone,";
+            query += " e.Email = @Email,";
+            query += " e.JobPosition = @JobPosition,";
+            query += " e.CompanyName = @CompanyName,";
+            query += " e.Education = @Education,";
+            query += " e.University = @University,";
+            query += " e.Major = @Major,";
+            query += " e.TrialDate = @TrialDate,";
+            query += " e.OfficalDate = @OfficalDate,";
+            query += " e.ContractType = @ContractType";
+            query += " WHERE e.EmployeeID='" + employeeID + "'";
+            using (SqlCommand cmd = new SqlCommand(query, this._sqlConnection))
+            {
+                // define parameters and their values
+                cmd.Parameters.Add("@EmployeeCode", SqlDbType.VarChar).Value = employee.EmployeeCode;
+                cmd.Parameters.Add("@EmployeeName", SqlDbType.NVarChar).Value = employee.EmployeeName;
+                cmd.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = employee.EmployeeCode;
+                cmd.Parameters.Add("@Address", SqlDbType.NVarChar).Value = employee.Address;
+                cmd.Parameters.Add("@Birthday", SqlDbType.DateTime).Value = employee.Birthday;
+                cmd.Parameters.Add("@NumberPhone", SqlDbType.VarChar).Value = employee.NumberPhone;
+                cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = employee.Email;
+                cmd.Parameters.Add("@JobPosition", SqlDbType.NVarChar).Value = employee.JobPosition;
+                cmd.Parameters.Add("@CompanyName", SqlDbType.NVarChar).Value = employee.CompanyName;
+                cmd.Parameters.Add("@Education", SqlDbType.NVarChar).Value = employee.Education;
+                cmd.Parameters.Add("@University", SqlDbType.NVarChar).Value = employee.University;
+                cmd.Parameters.Add("@Major", SqlDbType.NVarChar).Value = employee.Major;
+                cmd.Parameters.Add("@TrialDate", SqlDbType.DateTime).Value = employee.TrialDate;
+                cmd.Parameters.Add("@OfficalDate", SqlDbType.DateTime).Value = employee.OfficalDate;
+                cmd.Parameters.Add("@ContractType", SqlDbType.NVarChar).Value = employee.ContractType;
+                cmd.Parameters.Add("@State", SqlDbType.NVarChar).Value = employee.State;
+
+
+                // open connection, execute INSERT, close connection
+                int index = this._listEmployee.IndexOf(this._listEmployee.First(n => n.EmployeeID == employeeID));
+                if(index != -1) 
+                {
+                    this._listEmployee[index] = employee;
+                }
+                return cmd.ExecuteNonQuery();
+            }
         }
 
         public void Dispose()
