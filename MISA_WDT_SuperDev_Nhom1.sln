@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA_WDT_SuperDev_Nhom1", "MISA_WDT_SuperDev_Nhom1\MISA_WDT_SuperDev_Nhom1.csproj", "{44A910AD-C71B-461A-87BE-B937269DC201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "C:\Users\Anhpd1004\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.csproj", "{AC8F2BE2-FF2D-48E3-B7D4-7AC26E1217DC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{44A910AD-C71B-461A-87BE-B937269DC201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44A910AD-C71B-461A-87BE-B937269DC201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44A910AD-C71B-461A-87BE-B937269DC201}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC8F2BE2-FF2D-48E3-B7D4-7AC26E1217DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC8F2BE2-FF2D-48E3-B7D4-7AC26E1217DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC8F2BE2-FF2D-48E3-B7D4-7AC26E1217DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC8F2BE2-FF2D-48E3-B7D4-7AC26E1217DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
