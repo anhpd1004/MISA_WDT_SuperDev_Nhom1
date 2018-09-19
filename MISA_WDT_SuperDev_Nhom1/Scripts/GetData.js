@@ -41,7 +41,7 @@
         });
     }
     //get employee
-    GetEmployees(start, count) {
+    GetEmployeesOffset(start, count) {
         $.ajax({
             url: "/api/Employee?start=0&count=10",
             type: "GET",

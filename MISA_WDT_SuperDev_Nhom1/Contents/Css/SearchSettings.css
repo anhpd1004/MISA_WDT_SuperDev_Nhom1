@@ -1,4 +1,8 @@
-﻿#header-search-settings {
+﻿/*
+// CSS CHO PHẦN HEADER SEARCH SETTINGS
+// CREATED BY PDANH - 13/9/2018
+*/
+#header-search-settings {
     display: none;
     width: 100%;
     background-color: #fff !important;

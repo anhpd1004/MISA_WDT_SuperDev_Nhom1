@@ -1,0 +1,340 @@
+﻿
+.Information-Employee1 {
+    width: 100%;
+    height: 40%;
+    font-family: Arial;
+    font-weight: 300;
+    margin-left:-7px;
+    margin-top:-7px;
+}
+/*start css for header-information*/
+.Header-Information {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #dedcdc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item-header-left {
+    /*margin-left:2%;
+    margin-top:7px;*/
+    float: left;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+}
+
+.item-header-center {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+}
+
+/*#Span-Information {
+    padding-left:15px;
+    padding-right:15px;
+    border-left: 0.5px solid #808080;
+    border-right: 0.5px solid #808080;
+    border-top: 0.5px solid #808080;
+
+}*/
+
+/*start css for menu-information*/
+
+.Header-Menu {
+    width: 100%;
+    height: 45px !important;
+    border: 1px solid #f1e8e8;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #dedcdc;
+}
+    .Header-Menu a {
+        color: #000000 !important;
+    }
+
+.icon-span {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    float: left;
+}
+
+#item1 {
+    float: left;
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    margin-right: 10%;
+    max-width: 150px;
+    color: #000000;
+}
+
+#item2 {
+    float: left;
+    position: absolute;
+    left: 190px;
+    top: 14px;
+}
+#item7 {
+    float: right;
+    position: absolute;
+    left: 1070px;
+    top: 0px;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+#item8 {
+    float: left;
+    position: absolute;
+    left: 1058px;
+    top: 0px;
+    width:10px;
+    height:20px!important;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+#item9 {
+    float: left;
+    position: absolute;
+    left: 1089px;
+    top: 10px;
+    background-color: #ffffff;
+}
+
+#item8 span {
+    position: relative;
+}
+
+#id-next {
+    color: #1a42de !important;
+}
+.Header-Menu a {
+    text-decoration: none;
+}
+
+    .Header-Menu a:hover {
+        color: #256ee2 !important;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #1451b2;
+    }
+
+.Header-Menu #item1 {
+    margin-right: 35px;
+    margin-top: 14px;
+}
+
+
+/*end css for information*/
+/* start css cho phan information main */
+
+.Main-Information {
+    width: 100%;
+    height: 75%;
+    background-color: #ff6a00;
+    border: 1px solid #dedcdc;
+}
+
+.Main-Information-left {
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+}
+
+    .Main-Information-left img {
+        margin-top: 0px !important;
+        margin-left: 5px !important;
+    }
+
+.Main-Information-right {
+    width: 85%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+}
+
+.Main-Information-right1 {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+}
+
+.Main-Information-right2 {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+}
+
+.Main-Information-right span {
+    float: left;
+}
+
+#row1 {
+    font-weight: bold;
+}
+
+#Title-Employee {
+    margin-left: 2%;
+    width: 25%;
+}
+
+#content-information {
+    padding: 0.5%;
+    clear: left;
+}
+
+#dialog-message {
+    width: 150px;
+    height: 200px !important;
+    overflow: scroll;
+}
+
+.ui-dialog-titlebar {
+    background-color: #ff6a00 !important;
+}
+
+.ui-widget-header {
+    background-color: #ff6a00 !important;
+}
+/*.table-information-setting tr th, td {
+    border: 1px solid #000000;*/
+.ui-button {
+    margin-left: 145px !important;
+}
+/*css add*/
+
+.pn-ProductNav_Wrapper {
+    position: relative;
+    padding: 0 11px;
+}
+
+.pn-ProductNav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* If JS present, let's hide the default scrollbar */
+    /* positioning context for advancers */
+    position: relative;
+}
+
+.js .pn-ProductNav {
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* Remove the default scrollbar for WebKit implementations */
+}
+
+    .js .pn-ProductNav::-webkit-scrollbar {
+        display: none;
+    }
+
+.pn-ProductNav_Contents {
+    float: left;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.pn-ProductNav_Contents-no-transition {
+    transition: none;
+}
+
+.pn-ProductNav_Link {
+    text-decoration: none;
+    color: #888;
+    font-size: 1.2em;
+    font-family: -apple-system, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+
+    .pn-ProductNav_Link + .pn-ProductNav_Link {
+        margin-left: 11px;
+        padding-left: 11px;
+        border-left: 1px solid #eee;
+    }
+
+    .pn-ProductNav_Link[aria-selected="true"] {
+        color: #111;
+    }
+
+.pn-Advancer {
+    /* Reset the button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    /* Now style it as needed */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* Set the buttons invisible by default */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .pn-Advancer:focus {
+        outline: 0;
+    }
+
+    .pn-Advancer:hover {
+        cursor: pointer;
+    }
+
+.pn-Advancer_Left {
+    left: 0;
+}
+
+[data-overflowing="both"] ~ .pn-Advancer_Left, [data-overflowing="left"] ~ .pn-Advancer_Left {
+    opacity: 1;
+}
+
+.pn-Advancer_Right {
+    right: 0;
+}
+
+[data-overflowing="both"] ~ .pn-Advancer_Right, [data-overflowing="right"] ~ .pn-Advancer_Right {
+    opacity: 1;
+}
+
+.pn-Advancer_Icon {
+    /*width: 15px;
+    height: 25px;
+    fill: #bbb;*/
+}
+
+.pn-ProductNav_Link {
+    font-size: 12px !important;
+}
+
+#Icon-menu-default {
+    color: #2267e2 !important;
+    text-decoration: underline !important;
+    text-decoration: double;
+    text-decoration-color: #16669b !important;
+    font-weight: 600;
+}
+
+.fa-caret-right {
+    margin-right: 66px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
+}
