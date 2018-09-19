@@ -1,0 +1,272 @@
+﻿.item-AddHeader1 {
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e8dede;
+}
+    .item-AddHeader1 .item1 {
+        float: left;
+        margin-left: 0px;
+        padding-top:5px;
+        color:#337bed;
+        font-size:15px;
+    }
+    .item-AddHeader1 .item2 {
+        float: left;
+        padding-top: 5px;
+        padding:10px;
+    }
+    .item-AddHeader1 .item3 {
+        float: left;
+        padding-top: 5px;
+        font-size:16px;
+        font-weight:bold;
+    }
+
+.item-AddHeader2 {
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e8dede;
+}
+.item-AddHeader3{
+    width:98%;
+    height:600px;
+    background-color:#ffffff;
+    margin-top:70px;
+    border:2px solid #ccc;
+    border-radius:4px;
+    
+}
+
+/*addd main*/
+.title-addHeader{
+    width:100%;
+    height:30px;
+    margin-top:15px;
+    margin-left:10px;
+}
+.item-AddHeader3 .title-addHeader item1 {
+    float: left;
+}
+.item-AddHeader3 .titel-addHeader item2 {
+    float: left;
+    background-image: url('/Contents/Icons/imageLine.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+.Main-Information-EmployeeAdd{
+    width:98%;
+    height:300px;
+    background-color:#ffffff;
+    padding-bottom:5px;
+    border:1px solid #ff0000;
+    margin-left:3px;
+}
+.add-icon-employee {
+    width: 12%;
+    height: 300px;
+    background-color: #ffffff;
+    float:left;
+}
+.add-informationleft-employee {
+    width: 43%;
+    height:300px;
+    background-color: #ffffff;
+    float: left;
+}
+.add-informationright-employee {
+    width: 45%;
+    height: 300px;
+    background-color: #ffffff;
+    float: left;
+}
+.ipt-add-informationleft {
+    margin-bottom:28px;
+    margin-left:10px;
+
+}
+.ipt-add-informationright {
+    margin-bottom: 28px;
+    margin-left: 5px;
+}
+.ipt-add {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width:76%;
+    padding:1%;
+}
+.ipt-add-date {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 25%;
+    padding: 1%;
+}
+.ipt-add1 {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 95%;
+    padding: 1%;
+}
+.ipt-add1-text {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 95%; 
+    padding: 1%;
+}
+.add-informationleft-employee-title {
+    width: 20%;
+    height: 300px;
+    float: left;
+    background-color:#ffffff;
+    margin-left:3px;
+}
+.add-informationleft-employee-content {
+    width: 100%;
+    height: 300px;
+    background-color:#ffffff;
+}
+.add-informationright-employee-title{
+    width:25%;
+    float:left;
+    background-color:#ffffff;
+}
+.add-informationright-employee-content{
+    width:74%;
+    background-color:#ffffff;
+    float:left;
+}
+.information-employee-main2-cmt {
+    width: 100%;
+    height: 300px;
+   
+}
+.information-employee-main3-TD {
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+}
+.information-employee-main2-cmt-title{
+    margin-top:15px;
+}
+.item-AddHeader1 .item11 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right:15px;
+    padding-left:25px;
+    background-image:url('/Contents/Icons/save16.png');
+    background-repeat:no-repeat;
+    background-position:0 8px;
+    padding-bottom:5px;
+}
+.item-AddHeader1 .item12 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 35px;
+    background-image: url('/Contents/Icons/saveadd16.png');
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 .item13 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-image: url('/Contents/Icons/reject16.png');
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 .item14 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-image: url('/Contents/Icons/setting16.png');
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 .item15 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-image: url('/Contents/Icons/question16.png');
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 .item16 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 35px;
+    background-image: url('/Contents/Icons/sound16.png');
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 .item17 {
+    float: left;
+    margin-left: 0px;
+    padding-top: 5px;
+    color: #337bed;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-image: url('/Contents/Icons/close16.png');
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-bottom: 5px;
+}
+.item-AddHeader1 div:hover{
+    background-color:#b6cdf1;
+}
+.item-AddHeader1 div{
+    cursor:pointer;
+}

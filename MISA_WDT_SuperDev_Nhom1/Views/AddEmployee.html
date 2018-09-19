@@ -2,14 +2,129 @@
 <!-- Khung trang thêm nhân viên -->
 <!-- /// -->
 <div id="add-employee">
-    <!-- navbar of employee -->
-    <!-- Giống bên table nhân viên, Tiến Thành làm luôn-->
-    <div class="tien-thanh-dat-ten"></div>
 
-    <!-- Thông tin chung - nhập liệu -->
-    <!-- Huy Hoang làm -->
-    <div class="huy-hoang-dat-ten"></div>
+    <!-- /// -->
+    <!-- Created by: Do Huy Hoang -->
+    <!-- Created at: 11/09/2018 -->
+    <!-- Description: Them nhan vien -->
+    <!-- /// -->
+    <div class="data-content" style="overflow-y:scroll;overflow-x:hidden;margin-left:45px;">
 
+        <div class="item-AddHeader1" style="position:fixed;margin-left:-10px;float:left;">
+            <div class="item1" style="font-size:15px;font-weight:bold;">Hồ sơ</div>
+            <div class="item2"><i class="fa fa-angle-left" style="font-size:20px;color:#0b67bf;margin-top:-5px;"></i></div>
+            <div class="item3">Thêm nhân viên mới</div>
+        </div>
+        <div class="item-AddHeader1" style="position:fixed;margin-left:-10px;float:left; top:80px;">
+            <div class="item11" style="margin-left:8px;">Cất</div>
+            <div class="item12">Cất &#38; Thêm</div>
+            <div class="item13">Hoãn</div>
+            <div class="item14">Thiết lập ngầm định</div>
+            <div class="item15">Giúp</div>
+            <div class="item16">Phản hồi</div>
+            <div class="item17">Đóng</div>
+        </div>
+        <div class="item-AddHeader3">
+            <div class="title-addHeader">
+                <div class="item1" style="float:left;padding-right:15px;">1.Thông tin chung</div>
+                <div class="item2" style="margin-top:15px;"><img src="/Contents/Icons/imageLine.png" /></div>
+            </div>
+            <div class="Main-Information-EmployeeAdd">
+                <div class="add-icon-employee"><img src="/Contents/Icons/imagedisplay.png" /></div>
+                <div class="add-informationleft-employee">
+                    <div class="add-informationleft-employee-title">
+                        <div class="ipt-add-informationleft">Mã nhân viên<span style="color:#ff0000">(*)</span></div>
+                        <div class="ipt-add-informationleft">Họ và đệm</div>
+                        <div class="ipt-add-informationleft">Tên</div>
+                        <div class="ipt-add-informationleft">Họ và tên<span style="color:#ff0000">(*)</span></div>
+                        <div class="ipt-add-informationleft">Giới tính</div>
+                        <div class="ipt-add-informationleft">Ngày sinh</div>
+                    </div>
+                    <div class="add-informationleft-employee-content">
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add" /></div>
+                        <select class="ipt-add" id="country" name="country">
+                            <option value="australia">Nam</option>
+                            <option value="canada">Nữ</option>
+                        </select>
+                        <div>
+                            <input class="ipt-add-date" id="datepicker" width="276" />
+                            <img src="/Contents/Icons/icondate.png" style="margin-left:-22px;margin-bottom:5px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="add-informationright-employee">
+                    <div class="add-informationright-employee-title">
+                        <div class="ipt-add-informationright" style="margin-bottom:80px;">Địa chỉ</div>
+                        <div class="ipt-add-informationright">Điện thoại</div>
+                        <div class="ipt-add-informationright">Email</div>
+                        <div class="ipt-add-informationright">Vị trí công việc<span style="color:#ff0000">(*)</span></div>
+                        <div class="ipt-add-informationright">Đơn vị công tác<span style="color:#ff0000">(*)</span></div>
+                    </div>
+                    <div class="add-informationright-employee-content">
+                        <div><textarea class="ipt-add1-text" style="height:70px;margin-bottom:30px;"></textarea></div>
+                        <div><input class="ipt-add1" /></div>
+                        <div><input class="ipt-add1" /></div>
+                        <div>
+                            <input class="ipt-add1" />
+                            <span><img src="/Contents/Icons/arr_down.png" style="margin-left:-45px;margin-bottom:10px;" /></span>
+                            <span><img src="/Contents/Icons/3cham.png" height="20" style="margin-left:0px;margin-bottom:3px;border-left:1px solid #808080;" /></span>
+                        </div>
+                        <div>
+                            <input class="ipt-add1" />
+                            <span><img src="/Contents/Icons/arr_down.png" style="margin-left:-45px;margin-bottom:10px;" /></span>
+                            <span><img src="/Contents/Icons/3cham.png" height="20" style="margin-left:0px;margin-bottom:5px;border-left:1px solid #808080;" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <center><hr style="padding-bottom:1px; background-color:#0b67bf; width:95%;" /></center>
+            <div style="margin-bottom:25px;width:100%;height:1px;"></div>
+
+            <div class="Main-Information-EmployeeAdd" style="height:150px;width:95%;">
+
+                <div style="width:100%;height:30px;padding-bottom:20px;">
+                    <div style="float:left;width:50%;font-weight:bold;margin-left:5px;">Chứng minh nhân dân/Thẻ căn cước</div>
+                    <div style="width:80%;font-weight:bold;">Hộ chiếu</div>
+                </div>
+
+                <div class="add-informationleft-employee" style="width:50%;height:200px;">
+                    <div class="add-informationleft-employee-title">
+                        <div class="ipt-add-informationleft">Số<span style="color:#ff0000">(*)</span></div>
+                        <div class="ipt-add-informationleft">Ngày cấp</div>
+                        <div class="ipt-add-informationleft">Nơi cấp</div>
+                        <div class="ipt-add-informationleft">Ngày hết hạn<span style="color:#ff0000">(*)</span></div>
+                    </div>
+                    <div class="add-informationleft-employee-content" style="height:200px;">
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add-date" /><img src="/Contents/Icons/icondate.png" style="margin-left:-22px;margin-bottom:5px;" /></div>
+                        <div><input class="ipt-add" /><span><img src="/Contents/Icons/arr_down.png" style="margin-left:-25px;margin-bottom:10px;" /></span></div>
+                        <div><input class="ipt-add-date" /><img src="/Contents/Icons/icondate.png" style="margin-left:-22px;margin-bottom:5px;" /></div>
+                    </div>
+                </div>
+                <div class="add-informationright-employee" style="width:50%;tyle=" height:200px;">
+                    <div class="add-informationright-employee-title" style="height:200px;">
+                        <div class="ipt-add-informationleft">Số<span style="color:#ff0000">(*)</span></div>
+                        <div class="ipt-add-informationleft">Ngày cấp</div>
+                        <div class="ipt-add-informationleft">Nơi cấp</div>
+                        <div class="ipt-add-informationleft">Ngày hết hạn<span style="color:#ff0000">(*)</span></div>
+                    </div>
+                    <div class="add-informationright-employee-content" style="height:200px;">
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add-date" /><img src="/Contents/Icons/icondate.png" style="margin-left:-22px;margin-bottom:5px;" /></div>
+                        <div><input class="ipt-add" /></div>
+                        <div><input class="ipt-add-date" /><img src="/Contents/Icons/icondate.png" style="margin-left:-22px;margin-bottom:5px;" /></div>
+                    </div>
+                </div>
+            </div>
+            <center><hr style="padding-bottom:1px; background-color:#0b67bf; width:95%;" /></center>
+            <div style="margin-bottom:5px;width:100%;height:1px;"></div>
+        </div>
+    </div>
+    <!--Add them-->
     <!-- /// -->
     <!-- /// THÔNG TIN LIÊN HỆ -->
     <!-- /// CREATED BY NTTHANH - 18/9/2018 -->
@@ -327,11 +442,5 @@
             </div>
         </div>
     </div>
-
-    <!-- END ADD-EMPLOYEE-ADDRESS -->
-
-    <!-- Thông tin công việc - duy anh -->
-    <div class="add-employee-working">
-
-    </div>
 </div>
+

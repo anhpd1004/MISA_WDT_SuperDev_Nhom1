@@ -31,6 +31,7 @@
     <link href="Contents/Css/AddEmployeeAddress.css" rel="stylesheet" />
     <link href="Contents/Css/AddEmployeeaddress2.css" rel="stylesheet" />
     <link href="Contents/Css/infor.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--  -->
 </head>
 
@@ -974,7 +975,7 @@
                 </div>
                 <div class="Main-Information">
                     <div class="Main-Information-left">
-                        <img src="/Contents/Images/general/imageinformation.png" style="width:100%;height:100%" />
+                        <img src="./Contents/Icons/ImageHandler (1).png" style="width:100%;height:100%" />
                     </div>
                     <div class="Main-Information-right">
                         <div class="Main-Information-right1">
@@ -1023,12 +1024,340 @@
                         </div>
                     </div>
                 </div>
-                 hien thi muc them khach hang 
-                <div id="lam-mo-nen"></div>
-                <div id="them-khach-hang-moi"></div>
             </div>
             <!--end Huy Hoang-->                
             <!-- Thông tin nhân viên -->
+            <div id="add-employee-form" style="position: fixed;  top: 50px; right: 0px; bottom: 0px; background-color: #fff; overflow-y: auto;">
+                <!-- /// -->
+                <!-- Khung trang thêm nhân viên -->
+                <!-- /// -->
+                <div id="add-employee">
+
+                    <!-- /// -->
+                    <!-- Created by: Do Huy Hoang -->
+                    <!-- Created at: 11/09/2018 -->
+                    <!-- Description: Them nhan vien -->
+                    <!-- /// -->
+                    <!--Add them-->
+                    <!-- /// -->
+                    <!-- /// THÔNG TIN LIÊN HỆ -->
+                    <!-- /// CREATED BY NTTHANH - 18/9/2018 -->
+                    <!-- /// -->
+                    <div class="add-employee-address">
+                        <div class="add-employee-address-box-item">
+                            <div class="add-employee-address-header">
+                                <div class="add-employee-address-panel-header">
+                                    2. Thông tin liên hệ
+                                </div>
+                                <div class="add-employee-address-hr-header">
+                                </div>
+                            </div>
+
+                            <div class="add-employee-address-information-contact">
+                                <ul style="list-style-type:none;margin-top: 0px;">
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Điện thoại di động</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-mobile-phone" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <span class="add-employee-address-icon add-employee-address-icon-skype"></span>
+                                                    <div class="add-employee-address-text-right add-employee-address-text-social-network">Skype</div>
+                                                    <input name="" class="add-employee-address-input2" type="text" value="" placeholder="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Điện thoại cơ quan</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-company-phone" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <span class="add-employee-address-icon add-employee-address-icon-facebook"></span>
+                                                    <div class="add-employee-address-text-right add-employee-address-text-social-network">Facebook</div>
+                                                    <input name="" class="add-employee-address-input2" type="text" value="" placeholder="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Điện thoại nhà riêng</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-home-phone" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <span class="add-employee-address-icon add-employee-address-icon-msn"></span>
+                                                    <div class="add-employee-address-text-right add-employee-address-text-social-network">MSN ID</div>
+                                                    <input name="" class="add-employee-address-input2" type="text" value="" placeholder="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Điện thoại khác</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-other-phone" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Email cá nhân</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-your-email" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Email cơ quan</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-company-email" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Email khác</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-other-email" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="add-employee-address-family">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Nguyên quán</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-nguyen-quan" type="text" value="" placeholder="<Xã/Phường - Quận/Huyện>" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Số sổ hộ khẩu</div>
+                                                    <input name="" class="add-employee-address-input2" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Tỉnh/Thành phố</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-tinh-tp" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Mã số hộ gia đình</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-ma-so-ho-gd" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Nơi sinh</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-noi-sinh" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <input name="" class="add-employee-address-check-box" type="button" value="" />
+                                                    <div class="add-employee-address-text-button">Là chủ hộ</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="add-employee-address-country">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left add-employee-address-text-title">Hộ khẩu thường trú</div>
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right2 add-employee-address-text-title">Chỗ ở hiện nay</div>
+                                                    <input name="" class="add-employee-address-check-box" type="button" value="" />
+                                                    <div class="add-employee-address-text-button">Giống hộ khẩu thường trú</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Quốc gia</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-quoc-gia" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Quốc gia</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-quoc-gia" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Tỉnh/Thành phố</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-tinh-thanh" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Tỉnh/Thành phố</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-tinh-thanh" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Quận huyện</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-quan-huyen" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Quận huyện</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-quan-huyen" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Xã phường</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-xa-phuong" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Xã phường</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-xa-phuong" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Số nhà/Đường phố/Thôn xóm</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-so-nha" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Số nhà/Đường phố/Thôn xóm</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-so-nha" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Địa chỉ</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-dia-chi" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Địa chỉ</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-dia-chi" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="add-employee-address-emergency-contact">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left add-employee-address-text-title">Liên hệ khẩn cấp</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Họ và tên</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-ho-ten" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Email</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-family-email" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">Quan hệ</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-quan-he" type="text" value="" />
+                                                </td>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-right">Địa chỉ</div>
+                                                    <input name="" class="add-employee-address-input2 add-employee-address-family-address" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">ĐT di dộng</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-ho-ten" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td style="display:inline-flex">
+                                                    <div class="add-employee-address-text-left">ĐT nhà riêng</div>
+                                                    <input name="" class="add-employee-address-input add-employee-address-ho-ten" type="text" value="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

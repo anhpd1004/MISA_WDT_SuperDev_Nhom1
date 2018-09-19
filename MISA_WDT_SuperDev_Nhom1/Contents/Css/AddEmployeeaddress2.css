@@ -9,7 +9,7 @@
 
 .add-employee-address-box-item {
     height: 90vh;
-    width: 96%;
+    width: calc(100vw - 230px);
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 4px;

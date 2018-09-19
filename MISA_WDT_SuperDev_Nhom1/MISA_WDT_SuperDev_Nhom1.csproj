@@ -76,12 +76,14 @@
     <Content Include="Contents\Css\AddEmployeeaddress2.css" />
     <Content Include="Contents\Css\datacontent.css" />
     <Content Include="Contents\Css\infor.css" />
+    <Content Include="Contents\Css\informationAddEmployee.css" />
     <Content Include="Contents\Css\SearchSettings.css" />
     <Content Include="Contents\Css\submenu.css" />
     <Content Include="Contents\Css\sidebar.css" />
     <Content Include="Contents\Css\style.css" />
     <Content Include="Contents\Css\header.css" />
     <Content Include="Contents\Css\table.css" />
+    <Content Include="Contents\Icons\3cham.png" />
     <Content Include="Contents\Icons\accomplishment.png" />
     <Content Include="Contents\Icons\add16.png" />
     <Content Include="Contents\Icons\arr_down.png" />
@@ -94,8 +96,11 @@
     <Content Include="Contents\Icons\dictionary.png" />
     <Content Include="Contents\Icons\gui-email-hang-loat.png" />
     <Content Include="Contents\Icons\home.png" />
+    <Content Include="Contents\Icons\icondate.png" />
+    <Content Include="Contents\Icons\imagedisplay.png" />
     <Content Include="Contents\Icons\ImageHandler %281%29.png" />
     <Content Include="Contents\Icons\ImageHandler.png" />
+    <Content Include="Contents\Icons\imageLine.png" />
     <Content Include="Contents\Icons\logo.png" />
     <Content Include="Contents\Icons\menu-quick-report.png" />
     <Content Include="Contents\Icons\notification-hover.png" />
