@@ -1,5 +1,4 @@
 ﻿.add-employee-address {
-    height: calc(100vh-55px);
     width: 100%;
     right: auto;
     left: 0px;
@@ -8,18 +7,18 @@
 }
 
 .add-employee-address-box-item {
-    height: 90vh;
-    width: calc(100vw - 230px);
-    margin-top: 20px;
-    margin-left: 20px;
+    width: calc(100vw - 290px);
+    padding-left: 10px;
+    padding-right:  10px;
+    margin: 10px;
     border-radius: 4px;
-    box-shadow: #888 0 2px 6px;
-    overflow-y: scroll;
+    box-shadow: #888 0 2px 8px;
+    /* overflow-y: scroll; */
 }
 
 .add-employee-address-header {
     height: 55px;
-    width: 96%;
+    width: calc(100vw - 290px);
     right: auto;
     left: 0px;
     top: 0px;
@@ -37,28 +36,28 @@
 .add-employee-address-hr-header {
     background: url('../Images/icon-social-network/panel-header-bg.png') repeat-x;
     background-position-y: 20px;
-    width: 96%;
+    width: 80%;
 }
 
 .add-employee-address-information-contact {
-    width: 96%;
+    width: calc(100vw - 290px);
     display: flex;
 }
 
 .add-employee-address-family {
-    width: 96%;
+    width: calc(100vw - 290px);
     display: flex;
     border-top: 1px solid #d8d8d8;
 }
 
 .add-employee-address-country {
-    width: 96%;
+    width: calc(100vw - 290px);
     display: flex;
     border-top: 1px solid #d8d8d8;
 }
 
 .add-employee-address-emergency-contact {
-    width: 96%;
+    width: calc(100vw - 290px);
     display: flex;
     border-top: 1px solid #d8d8d8;
 }
@@ -85,7 +84,7 @@
 
 .add-employee-address-input {
     height: 24px !important;
-    width: 400px;
+    width: 350px;
     border: 1px solid #d8d8d8;
     border-radius: 3px 0 0 3px;
 }

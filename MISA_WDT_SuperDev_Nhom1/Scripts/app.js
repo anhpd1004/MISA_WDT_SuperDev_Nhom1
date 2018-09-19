@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+
     var getData = new GetData();
 
 
