@@ -1,5 +1,9 @@
 ﻿/* CSS FOR BODY */
 
+.toolbar-item:hover {
+    background-color: #5eb5eb;
+}
+
 .employee-table {
     display: flex;
     padding: 10px 0px 0px 10px;
@@ -13,13 +17,18 @@
     overflow-x: unset;
     border: 1px solid #dbdbdb;
     border-bottom: 0px;
+    height: 100%;
 }
 
 .employee-table-state {
-    margin-left: -5px;
-    overflow-x: scroll;
+    margin-left: -3px;
+    height: max-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
     border: 1px solid #dbdbdb;
     border-bottom: 0px;
+    height: 100%;
 }
 
 .employee-table-list-customer {
@@ -31,6 +40,8 @@
     -webkit-box-sizing: border-box;
     border: 1px solid #dbdbdb;
     font-size: 13px;
+    overflow-x: scroll !important;
+    height:  100%;
 }
 
 .employee-table-gridPanel-header-item-title {
@@ -61,6 +72,17 @@
     border: 1px solid #cfcfcf;
 }
 
+.toolbar-item {
+    padding: 7px 3px 10px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.toolbar-item:hover {
+    background-color: #deeefb;
+}
+
 .toolbar-item-icon-select-x {
     height: 22px;
     width: 30px;
@@ -77,11 +99,23 @@
 }
 
 .employee-table-list-line-x {
-    background-color: #fff !important;
+    background-color: #f6f6f6;
 }
 
 .employee-table-list-line-y {
-    background-color: #f6f6f6 !important;
+    background-color: #fff;
+}
+.table-row-hover {
+    background-color: #deeefb !important;
+}
+.table-row td {
+    padding-left: 6px;
+}
+/*.table-row:hover {
+    background-color: #deeefb !important;
+}*/
+.table-row-active {
+    background-color: #deeefb;
 }
 
 .employee-record-summary {

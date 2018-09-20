@@ -9,7 +9,7 @@
                 
                 for(var i = 0; i < response.length; i++) {
                     var row = "<tr class='" + (i % 2 === 1 ? "employee-table-list-line-x" : "employee-table-list-line-y") + 
-                            "'";
+                            " table-row'";
                     var e = response[i];
                     row += "EmployeeID='" + e.EmployeeID + "'>";
                     var rowLeft  = row +  `
@@ -34,6 +34,8 @@
                     $("#tbody-left").append(rowLeft);
                     $("#tbody-right").append(rowRight);
                 }
+                var e = new Event();
+                e.OnTableRowHover();
             },
             fail: function(response) {
                 alert("Fail");
@@ -51,7 +53,7 @@
                 
                 for(var i = 0; i < response.length; i++) {
                     var row = "<tr class='" + (i % 2 === 1 ? "employee-table-list-line-x" : "employee-table-list-line-y") + 
-                            "'";
+                            " table-row'";
                     var e = response[i];
                     row += "EmployeeID='" + e.EmployeeID + "'>";
                     var rowLeft  = row +  `

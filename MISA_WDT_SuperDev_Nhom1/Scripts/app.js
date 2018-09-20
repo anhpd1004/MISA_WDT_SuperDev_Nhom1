@@ -15,7 +15,6 @@
     event.OnSidebarSubmenuClick();
     event.OnHeaderMainMenuClick();
 
-
     getData.GetEmployees();
     $(".header-account").click(event.OnAccountClick);
     $(".search-settings").click(event.OnSearchSettingsClick);

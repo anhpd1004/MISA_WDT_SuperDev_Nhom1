@@ -94,4 +94,28 @@
             }
         })
     }
+    OnTableRowHover() {
+        var TableRows = $(".table-row");
+        $.each(TableRows, function(i, v) {
+            $(v).mouseenter(function() {
+                var EmployeeID = $(v).attr("employeeid");
+                var temp = $("[employeeid='" + EmployeeID + "'");
+                $.each(temp, function(index, val) { 
+                    $(val).addClass("table-row-hover");
+                });
+            });
+            $(v).mouseout(function() {
+                var EmployeeID = $(v).attr("employeeid");
+                var temp = $("[employeeid='" + EmployeeID + "'");
+                $.each(temp, function(index, val) { 
+                    $(val).removeClass("table-row-hover");
+                });
+            });
+        });
+        
+        //$(".table-row").mouselease(function() {
+        //    var EmployeeID = $(this).attr("EmployeeID");
+        //    $("[EmployeeID='" + EmployeeID + "'").css({"background-color": "#fff"});
+        //})
+    }
 }
