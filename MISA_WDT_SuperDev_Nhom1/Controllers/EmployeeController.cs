@@ -8,13 +8,16 @@ using MISA_WDT_SuperDev_Nhom1.Models;
 
 namespace MISA_WDT_SuperDev_Nhom1.Controllers
 {
+
     public class EmployeeController : ApiController
     {
 
-
+        
         // GET: api/Employee
         public IEnumerable<Employee> Get()
         {
+
+
             //Get data
             DatabaseAccess da = new DatabaseAccess();
             if(da.ListEmployee.Count == 0) 
@@ -81,10 +84,10 @@ namespace MISA_WDT_SuperDev_Nhom1.Controllers
         /// 
         /// </summary>
         /// <param name="value"></param>
-        public void Post([FromBody]Employee e)
+        public void Post([FromBody]Employee employee)
         {
             DatabaseAccess da = new DatabaseAccess();
-            da.Insert(e);
+            da.Insert(employee);
             da.Dispose();
         }
 

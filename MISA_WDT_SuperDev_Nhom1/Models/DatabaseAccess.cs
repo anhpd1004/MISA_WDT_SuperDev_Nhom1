@@ -96,7 +96,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
             {
 
                 // define parameters and their values
-                cmd.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = employee.EmployeeID;
+                cmd.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = Guid.NewGuid();
                 cmd.Parameters.Add("@EmployeeCode", SqlDbType.VarChar).Value = employee.EmployeeCode;
                 cmd.Parameters.Add("@EmployeeName", SqlDbType.NVarChar).Value = employee.EmployeeName;
                 cmd.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = employee.EmployeeCode;

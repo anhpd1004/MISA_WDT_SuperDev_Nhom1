@@ -22,4 +22,6 @@
     $(".search-settings").click(event.OnSearchSettingsClick);
     event.OnTableRowClick();
     event.OnAddEmployeeClick();
+
+    $(document).on("click", "#Save-Employee", getData.PostEmployee);
 });

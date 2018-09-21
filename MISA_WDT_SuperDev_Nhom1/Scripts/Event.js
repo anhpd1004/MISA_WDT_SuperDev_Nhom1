@@ -207,5 +207,10 @@
             $("#add-employee-form").show();
         });
     }
+
+    GetDataForRecordLabel() {
+        var len = $(".table-row").length;
+        $(".employee-record-summary-y").text(len / 2);
+    }
     
 }

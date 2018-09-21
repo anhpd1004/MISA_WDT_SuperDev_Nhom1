@@ -3,6 +3,7 @@
     height: 30px;
     background-color: #ffffff;
     border: 1px solid #e8dede;
+    padding-left:  20px !important;
 }
     .item-AddHeader1 .item1 {
         float: left;
@@ -30,14 +31,16 @@
     border: 1px solid #e8dede;
 }
 .item-AddHeader3 {
-    width: 98%;
-    height: 1100px;
+    width: 100%;
+    height: calc(100vh - 150px);
+    overflow-x: hidden;
     background-color: #ffffff;
     margin-top: 70px;
     border: 1px solid #ccc;
     border-radius: 4px;
     min-width: 900px;
     box-shadow: #888 0 2px 8px;
+    overflow-y: scroll;
 }
 
 /*addd main*/
@@ -280,3 +283,91 @@
     margin-left:-18px;
     margin-bottom:5px;
 }
+.trigger-information-emp{
+    width:100%;
+    border:1px solid #337bed;
+   
+}
+.trigger-information-emp1{
+    border:1px solid #b6cdf1;
+    width:100%;
+    margin-top:-20px;
+}
+#select-item-employee:hover{
+    background-color:aliceblue;
+}
+.trigger-information-emp div:hover{
+    background-color:#b6cdf1;
+}
+.ui-dialog-titlebar{
+    background-color:#337bed!important;
+    width:500px!important;
+}
+#dialog {
+    width: 500px !important;
+    height: 360px !important;
+}
+.ui-dialog {
+    width: 535px !important;
+}
+#dialog th, #dialog td {
+    border:1px solid #808080;
+    border-collapse:collapse;
+    padding:7px;
+}
+.icon-group-employee123-item1 {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 24px;
+    background-image: url('/Contents/Icons/question16.png');
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    border-radius: 4px;
+}
+.icon-group-employee123-item2 {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 24px;
+    background-image: url('/Contents/Icons/chon.png');
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+    border-radius: 4px;
+    margin-left: 130px;
+    margin-right: 15px;
+}
+.icon-group-employee123-item3 {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 24px;
+    background-image: url('/Contents/Icons/add16.png');
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.icon-group-employee123-item4 {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 24px;
+    background-image: url('/Contents/Icons/utility16.png');
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.icon-group-employee123-item5 {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 24px;
+    background-image: url('/Contents/Icons/xoa.png');
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+

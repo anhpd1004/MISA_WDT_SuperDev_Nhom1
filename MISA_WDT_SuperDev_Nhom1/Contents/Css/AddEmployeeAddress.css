@@ -194,6 +194,7 @@
     position: fixed;
     top: 50px;
     right: 0px;
+    left: 230px;
     bottom: 0px;
     background-color: #fff;
     overflow-y: auto;
