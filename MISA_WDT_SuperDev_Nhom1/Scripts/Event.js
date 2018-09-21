@@ -112,10 +112,100 @@
                 });
             });
         });
-        
-        //$(".table-row").mouselease(function() {
-        //    var EmployeeID = $(this).attr("EmployeeID");
-        //    $("[EmployeeID='" + EmployeeID + "'").css({"background-color": "#fff"});
-        //})
     }
+    OnTableScroll() {
+        $("[dataToggle='table-right']").scroll(function() {
+            var top = $(this).scrollTop();
+            $("[dataToggle='table-left']").scrollTop(top);
+        });
+    }
+    OnTableFilter() {
+        $(document).on("click", ".employee-table-select-filter", function() {
+            var html = `
+                <div class="filter-box outsite">
+                    <a class="circle-icon"><span>*</span> : Chứa</a>
+                    <a>= : Bằng</a>
+                    <a>+ : Bắt đầu bằng</a>
+                    <a>- : Kết thúc bằng</a>
+                    <a>! : Không chứa</a>
+                </div>
+            `;
+            $(this).parent().append(html);
+        }); 
+        
+    }
+    OnTableRowClick() {
+        var employeeID = "";
+        $(".table-row").click(function() {
+            $("[EmployeeID='" + employeeID + "']").removeClass("table-row-active");
+            employeeID = $(this).attr("EmployeeID");
+            $("[EmployeeID='" + employeeID + "']").addClass("table-row-active");
+            $.ajax({
+                url: "/api/Employee?employeeID=" + employeeID,
+                type: "GET",
+                datatype: "json",
+                asyns: false,
+                success: function(response) {
+                    var html = `
+                        <div class="Main-Information-left">
+                        <img src="./Contents/Icons/ImageHandler (1).png" style="width:100%;height:100%" />
+                        </div>
+						<div class="Main-Information-right">
+                        <div class="Main-Information-right1">
+                            <div id="content-information">
+                                <span id="Title-Employee">Mã nhân viên:</span>
+                                <div id="row1">${response.EmployeeCode}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Họ tên:</span>
+                                <div id="row1">${response.EmployeeName}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Giới tính:</span>
+                                <div id="row1">${response.Gender}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày sinh:</span>
+                                <div id="row1">${response.Birthday}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Số CMT:</span>
+                                <div id="row1"></div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Hộ chiếu:</span>
+                                <div id="row1"></div>
+                            </div>
+                        </div>
+                        <div class="Main-Information-right2">
+                            <div id="content-information">
+                                <span id="Title-Employee">Vị trí công việc:</span>
+                                <div id="row1">${response.JobPosition}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Đơn vị công tác:</span>
+                                <div id="row1">${response.CompanyName}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày thử việc:</span>
+                                <div id="row1">${response.TrialDate}</div>
+                            </div>
+                            <div id="content-information">
+                                <span id="Title-Employee">Ngày chính thức:</span>
+                                <div id="row1">${response.OfficalDate}</div>
+                            </div>
+                        </div>
+					`;
+                    $(".Main-Information").html(html);
+                }
+            });
+        });
+    }
+
+    OnAddEmployeeClick() {
+        $(".toolbar-item-add-employee").click(function() {
+            $("#add-employee-form").show();
+        });
+    }
+    
 }

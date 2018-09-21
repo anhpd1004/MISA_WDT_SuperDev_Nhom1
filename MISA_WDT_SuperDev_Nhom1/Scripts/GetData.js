@@ -36,6 +36,7 @@
                 }
                 var e = new Event();
                 e.OnTableRowHover();
+                e.OnTableRowClick();
             },
             fail: function(response) {
                 alert("Fail");

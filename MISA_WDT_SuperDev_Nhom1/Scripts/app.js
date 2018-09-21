@@ -14,8 +14,12 @@
     event.OnMenuItemActive();
     event.OnSidebarSubmenuClick();
     event.OnHeaderMainMenuClick();
+    event.OnTableScroll();
+    event.OnTableFilter();
 
     getData.GetEmployees();
     $(".header-account").click(event.OnAccountClick);
     $(".search-settings").click(event.OnSearchSettingsClick);
+    event.OnTableRowClick();
+    event.OnAddEmployeeClick();
 });

@@ -41,12 +41,13 @@
     border: 1px solid #dbdbdb;
     font-size: 13px;
     overflow-x: scroll !important;
-    height:  100%;
+    height: 100%;
 }
 
 .employee-table-gridPanel-header-item-title {
     height: 26px;
     width: 200px;
+    min-width: 200px;
     text-align: center;
     background-color: #ededed;
     border: 1px solid #dbdbdb;
@@ -54,19 +55,24 @@
 
 .employee-table-gridPanel-header-item-filter {
     display: flex;
+    min-width: 200px;
+    width: 200px;
 }
 
 .employee-table-select-filter {
     height: 32px;
-    width: 25px;
+    width: 35px;
+    min-width: 35px;
     color: #808080;
     background-color: #fcfcfc;
     border: 1px solid #cccccc;
+    cursor: pointer;
 }
 
 .employee-table-input-filter {
     height: 32px;
-    width: 100px;
+    width: 130px;
+    min-width: 130px;
     margin-left: -1px;
     margin-right: -1px;
     border: 1px solid #cfcfcf;
@@ -79,23 +85,24 @@
     height: 100%;
 }
 
-.toolbar-item:hover {
-    background-color: #deeefb;
-}
+    .toolbar-item:hover {
+        background-color: #deeefb;
+    }
 
 .toolbar-item-icon-select-x {
     height: 22px;
-    width: 30px;
+    width: 35px;
+    min-width: 35px;
     margin-left: 0px;
     margin-right: 0px;
     padding-right: 0px;
     padding-left: 0px;
     background-color: white;
     border: 1px solid #cfcfcf;
+    cursor: pointer;
 }
 
 .employee-table-list-customer-tbody {
-
 }
 
 .employee-table-list-line-x {
@@ -105,18 +112,25 @@
 .employee-table-list-line-y {
     background-color: #fff;
 }
+
+.table-row-active {
+    background-color: #c8e6fe !important;
+}
+
 .table-row-hover {
     background-color: #deeefb !important;
 }
+
+.employee-table-select-filter:hover, .toolbar-item-icon-select-x:hover {
+    background-color: #deeefb !important;
+}
+
 .table-row td {
     padding-left: 6px;
 }
 /*.table-row:hover {
     background-color: #deeefb !important;
 }*/
-.table-row-active {
-    background-color: #deeefb;
-}
 
 .employee-record-summary {
     border: 1px solid #dbdbdb;
@@ -137,3 +151,50 @@
     font-weight: bold;
 }
 
+.filter-box {
+    position: absolute;
+    z-index: 9999;
+    width: 202px;
+    min-width: 200px;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    min-height: 120px;
+    background-color: #fff;
+    box-shadow: #6f6f6f 2px 2px 3px;
+    border: 1px solid #e1e1e1;
+    margin-left: 0;
+    margin-top: 34px;
+    border-radius: 0 0 5px 5px;
+}
+
+    .filter-box a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px 5px 30px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+        .filter-box a:hover {
+            background-color: #c1ddf1;
+        }
+
+    .filter-box .circle-icon {
+        background: url("../images/table-circle-blue16.png") no-repeat;
+        background-position: 8px 6px;
+    }
+
+        .filter-box .circle-icon span {
+            position: relative;
+            top: 3px;
+        }
+
+#add-employee-form {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    overflow-y: auto;
+}

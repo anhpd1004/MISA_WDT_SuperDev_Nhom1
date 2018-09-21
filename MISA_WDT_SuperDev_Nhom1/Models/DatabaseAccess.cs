@@ -10,7 +10,7 @@ namespace MISA_WDT_SuperDev_Nhom1.Models
 {
     public class DatabaseAccess : IDisposable
     {
-        private string _connectionString = "Data Source=DESKTOP-RSN4E32\\SQLEXPRESS;Initial Catalog=MISA_WDT_SuperDev_Nhom1;Integrated Security=True";
+        private string _connectionString = "Data Source=(local);Initial Catalog=MISA_WDT_SuperDev_Nhom1;Integrated Security=True";
 
         private SqlConnection _sqlConnection;
 
